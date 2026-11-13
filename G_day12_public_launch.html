@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G — Day 12 Public Launch</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--text:#172238;--muted:#64748b;--accent:#245fca;--line:#e1e7f0;--soft:#eaf1ff;--warn:#fff3d8}
+[data-theme=dark]{--bg:#111827;--card:#1d293b;--text:#edf2f7;--muted:#aab7c8;--accent:#80aaff;--line:#35445a;--soft:#293b58;--warn:#46391f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 Arial,sans-serif}
+header{background:linear-gradient(120deg,#142f62,#2875d4);color:white;padding:25px 16px}
+.wrap{max-width:980px;margin:auto;padding:0 16px}h1{margin:0 0 6px;font-size:28px}header p{margin:0;opacity:.9}
+main{padding:22px 0 40px}.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:18px;margin-bottom:16px}
+h2{font-size:20px;margin:0 0 12px}.muted{color:var(--muted)}.warning{background:var(--warn);padding:14px;border-radius:10px;margin:14px 0}
+.steps{counter-reset:s}.step{padding:12px 0 12px 42px;border-bottom:1px solid var(--line);position:relative}.step:last-child{border:0}.step:before{counter-increment:s;content:counter(s);position:absolute;left:0;top:12px;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--soft);color:var(--accent);font-weight:bold}
+code{background:var(--soft);padding:2px 5px;border-radius:5px;overflow-wrap:anywhere}
+a{color:var(--accent)}button{border:0;border-radius:9px;background:var(--accent);color:white;padding:10px 14px;font-weight:bold;cursor:pointer}
+.check{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}.check:last-child{border:0}
+.progress{height:10px;background:var(--line);border-radius:20px;overflow:hidden;margin:12px 0}.bar{height:100%;width:0;background:#15945a}
+footer{text-align:center;color:var(--muted);padding:18px;font-size:13px}
+@media(max-width:650px){h1{font-size:23px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>🚀 G — Public Launch</h1><p>Andro faha-12 · Dingana famoahana sy fanamarinana farany.</p></div></header>
+<main class="wrap">
+<section class="card">
+<h2>⛔ Toe-javatra marina amin'izao</h2>
+<div class="warning"><strong>Tsy mbola public ny G.</strong> Vita ny prototypes HTML sy ny torolalana, saingy tsy mbola voamarina fa mifandray amin'ny backend, tsy mbola voasedra ny fiarovana manontolo, ary tsy mbola misy adiresy public navoaka tamin'ny Cloudflare Pages.</div>
+<p>Ny rakitra tsirairay dia prototype misaraka. Mila ampidirina ao amin'ny repository ny rakitra farany rehetra ary mila amboarina ny pejy fandraisana (<code>index.html</code>) alohan'ny hahazoana tranonkala iray mitambatra.</p>
+</section>
+<section class="card">
+<h2>🧭 Fomba famoahana amin'ny Cloudflare Pages</h2>
+<div class="steps">
+<div class="step"><strong>Manomàna ny GitHub repository</strong><br>Hamarino fa ao amin'ny root an'ny <code>heryfaly003-cloud/G</code> ny rakitra ilaina. Ampidiro ny dikan-teny farany amin'ny Day 4–12, ary amboary ny <code>index.html</code> ho pejy fandraisana mampifandray azy ireo.</div>
+<div class="step"><strong>Mamoròna tetikasa Cloudflare Pages</strong><br>Midira amin'ny kaontinao Cloudflare, safidio Workers & Pages → Create → Pages → Connect to Git. Safidio ny repository G.</div>
+<div class="step"><strong>Safidio ny build settings</strong><br>Ho an'ny HTML/CSS/JavaScript tsotra: Build command avela foana raha tsy misy build step; Build output directory apetraho amin'ny <code>/</code> na root directory araka ny asehon'ny dashboard.</div>
+<div class="step"><strong>Deploy preview</strong><br>Atombohy amin'ny preview deployment. Jereo ny rohy rehetra, ny endrika amin'ny finday, ny console errors ary ny pejy tsy hita.</div>
+<div class="step"><strong>Ampifandraiso ny backend rehefa vonona</strong><br>Amboary ny Supabase Auth, database, Storage ary RLS policies. Aza apetraka ao amin'ny frontend ny service-role key na secrets.</div>
+<div class="step"><strong>Fanamarinana fiarovana sy famoahana</strong><br>Hamarino HTTPS, permissions, privacy policy, terms, backup/restore, report/block/moderation ary ny fomba famafana kaonty. Rehefa vita ihany vao alefa ho public.</div>
+<div class="step"><strong>Domain manokana (raha ilaina)</strong><br>Afaka ampifandraisina aorian'izay ny domain-nao amin'ny Cloudflare Pages, ary hamarino ny DNS sy HTTPS.</div>
+</div>
+</section>
+<section class="card">
+<h2>✅ Lisitra fanamarinana</h2>
+<p class="muted">Mariho rehefa tena vita. Voatahiry ao amin'ity navigateur ity ny marika.</p>
+<div id="checks">
+<label class="check"><input type="checkbox"> Napetraka ao amin'ny GitHub ny rakitra farany rehetra (Day 4–12).</label>
+<label class="check"><input type="checkbox"> Vita ny index.html mampifandray ny sehatra rehetra.</label>
+<label class="check"><input type="checkbox"> Noforonina ny tetikasa Cloudflare Pages ary nifandray tamin'ny GitHub.</label>
+<label class="check"><input type="checkbox"> Nandeha tsara ny preview deployment sy ny rohy rehetra.</label>
+<label class="check"><input type="checkbox"> Vita ny Supabase Auth, database ary RLS policies.</label>
+<label class="check"><input type="checkbox"> Voasedra ny kaonty sy ny fahazoan-dalana amin'ny angona.</label>
+<label class="check"><input type="checkbox"> Vita ny fitsapana fiarovana sy fanamarinana backup/restore.</label>
+<label class="check"><input type="checkbox"> Vonona ny Privacy Policy, Terms ary contact/support.</label>
+<label class="check"><input type="checkbox"> Voamarina ny HTTPS, monitoring ary fomba fitantanana olana.</label>
+</div>
+<div class="progress"><div class="bar" id="bar"></div></div>
+<p id="count" class="muted">0 / 9 vita</p>
+<button onclick="resetChecks()">Avereno ny marika</button>
+</section>
+<section class="card">
+<h2>🔗 Tetikasa</h2>
+<p>GitHub repository: <a href="https://github.com/heryfaly003-cloud/G" target="_blank" rel="noopener">heryfaly003-cloud/G</a></p>
+<p>Cloudflare Pages: <a href="https://pages.cloudflare.com/" target="_blank" rel="noopener">Pejy ofisialy Cloudflare Pages</a></p>
+<p>Supabase: <a href="https://supabase.com/" target="_blank" rel="noopener">Tranonkala ofisialy Supabase</a></p>
+<p class="muted">Aza mizara tenimiafina, verification code, API secret na service-role key amin'ny chat na amin'ny repository public.</p>
+</section>
+</main>
+<footer>G · Day 12 Launch Guide · Tsy midika ho deployment vita ity torolalana ity.</footer>
+<script>
+const boxes=[...document.querySelectorAll('#checks input')];
+function save(){const vals=boxes.map(b=>b.checked);try{localStorage.setItem('gLaunchChecks',JSON.stringify(vals))}catch(e){}update()}
+function update(){const n=boxes.filter(b=>b.checked).length;document.getElementById('count').textContent=n+' / '+boxes.length+' vita';document.getElementById('bar').style.width=(n/boxes.length*100)+'%'}
+try{const vals=JSON.parse(localStorage.getItem('gLaunchChecks')||'[]');boxes.forEach((b,i)=>b.checked=!!vals[i])}catch(e){}
+boxes.forEach(b=>b.addEventListener('change',save));update();
+function resetChecks(){boxes.forEach(b=>b.checked=false);save()}
+</script>
+</body></html>

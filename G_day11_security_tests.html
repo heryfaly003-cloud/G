@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>G — Security & Tests | Day 11</title>
+<style>
+:root{--bg:#f3f6fb;--card:#fff;--text:#172238;--muted:#64748b;--accent:#245fca;--line:#e1e7f0;--good:#147a45;--warn:#9a5b00;--bad:#b42318;--soft:#eaf1ff}
+[data-theme=dark]{--bg:#111827;--card:#1d293b;--text:#edf2f7;--muted:#aab7c8;--accent:#80aaff;--line:#35445a;--good:#55d69a;--warn:#ffc36a;--bad:#ff8b83;--soft:#293b58}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 Arial,sans-serif}
+header{background:linear-gradient(120deg,#142f62,#2875d4);color:white;padding:24px 16px}
+.wrap{max-width:1000px;margin:auto;padding:0 16px}h1{margin:0 0 5px;font-size:27px}header p{margin:0;opacity:.9}
+main{padding:22px 0 42px}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+button{border:0;border-radius:10px;background:var(--accent);color:white;padding:10px 14px;font-weight:700;cursor:pointer}
+button.secondary{background:var(--soft);color:var(--text);border:1px solid var(--line)}
+button:focus{outline:3px solid #8bb4ff;outline-offset:2px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:18px;margin-bottom:16px}
+h2{font-size:19px;margin:0 0 12px}.muted{color:var(--muted)}.notice{border-left:4px solid var(--warn);background:var(--soft);padding:12px;border-radius:8px;margin:14px 0}
+.test{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}.test:last-child{border:0}
+.status{margin-left:auto;font-size:12px;font-weight:bold;white-space:nowrap}.pass{color:var(--good)}.pending{color:var(--warn)}.fail{color:var(--bad)}
+.progress{height:10px;background:var(--line);border-radius:20px;overflow:hidden;margin:10px 0}.bar{height:100%;width:0;background:var(--good);transition:width .2s}
+ul{padding-left:20px}li{margin:7px 0}.tag{display:inline-block;padding:3px 8px;border-radius:20px;background:var(--soft);font-size:12px;margin:2px}
+footer{text-align:center;color:var(--muted);padding:20px;font-size:13px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}h1{font-size:23px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>🛡️ G Security & Tests</h1><p>Andro faha-11 — Fanamarinana fototra sy lisitra fiarovana alohan'ny famoahana.</p></div></header>
+<main class="wrap">
+<div class="toolbar">
+<button onclick="runTests()">▶ Ataovy ny fitsapana</button>
+<button class="secondary" onclick="toggleTheme()">🌙 / ☀️ Maody</button>
+<button class="secondary" onclick="window.print()">🖨️ Atao printy</button>
+</div>
+<div class="notice"><strong>Zava-dehibe:</strong> Ity pejy ity dia manao fitsapana tsotra ao amin'ny navigateur ihany. Tsy miditra amin'ny kaody sy serveur rehetra, tsy manao penetration test, ary tsy manamarina fa azo antoka tanteraka ny G.</div>
+<div class="grid">
+<section class="card">
+<h2>🧪 Fitsapana mandeha ho azy</h2>
+<p class="muted">Tsindrio ny bokotra etsy ambony. Hosedraina eto amin'ity navigateur ity ihany ireto.</p>
+<div id="tests">
+<div class="test"><span>JavaScript mandeha</span><span class="status pending" id="t-js">Miandry</span></div>
+<div class="test"><span>Local storage azo ampiasaina</span><span class="status pending" id="t-storage">Miandry</span></div>
+<div class="test"><span>Fahafahana mamaky sy manoratra angona fitsapana</span><span class="status pending" id="t-write">Miandry</span></div>
+<div class="test"><span>Fomba HTTPS / secure context</span><span class="status pending" id="t-https">Miandry</span></div>
+<div class="test"><span>Haben'ny efijery sy responsive viewport</span><span class="status pending" id="t-screen">Miandry</span></div>
+<div class="test"><span>Safidy maody maizina/mazava</span><span class="status pending" id="t-theme">Miandry</span></div>
+</div>
+<div class="progress"><div class="bar" id="bar"></div></div>
+<p id="summary" class="muted" aria-live="polite">Tsy mbola nisy fitsapana natao.</p>
+</section>
+<section class="card">
+<h2>🔐 Fepetra fiarovana ilaina</h2>
+<p><span class="tag">Backend mbola ilaina</span><span class="tag">Tsy mbola voamarina</span></p>
+<ul>
+<li>HTTPS tsy maintsy ampiasaina amin'ny tranonkala public.</li>
+<li>Supabase Auth: fanamarinana mailaka, famerenana kaonty azo antoka, ary MFA raha ilaina.</li>
+<li>RLS (Row Level Security) amin'ny tabilao rehetra misy angona manokana.</li>
+<li>Tenimiafina tehirizina amin'ny hashing azo antoka; tsy tehirizina ho soratra tsotra.</li>
+<li>Fanamarinana angona eny amin'ny serveur; fiarovana amin'ny XSS, CSRF ary SQL injection.</li>
+<li>Fetra amin'ny fangatahana (rate limiting), sessions azo antoka, ary fitantanana secrets amin'ny server.</li>
+<li>Fomba fanaovana report, block, moderation ary famafana kaonty/angona.</li>
+<li>Politika momba ny tsiambaratelo, fepetra fampiasana ary fitantanana angona.</li>
+</ul>
+</section>
+</div>
+<section class="card">
+<h2>📋 Fitsapana atao tanana alohan'ny public</h2>
+<p class="muted">Asio marika rehefa vita sy voamarina amin'ny rafitra tena izy. Tsy manamarina ho azy ireo ity pejy ity.</p>
+<div id="manual">
+<label class="test"><input type="checkbox"> Voasedra amin'ny finday Android sy iPhone ary amin'ny solosaina.</label>
+<label class="test"><input type="checkbox"> Voasedra ny fisoratana anarana, fidirana, fivoahana ary famerenana kaonty.</label>
+<label class="test"><input type="checkbox"> Voasedra ny fahazoan-dalana: tsy mahita angon'ny olona hafa ny kaonty iray.</label>
+<label class="test"><input type="checkbox"> Voasedra ny fandefasana lahatsoratra, commentaire, hafatra ary sary.</label>
+<label class="test"><input type="checkbox"> Voasedra ny report, block ary moderation.</label>
+<label class="test"><input type="checkbox"> Voasedra ny backup sy ny famerenana angona (restore).</label>
+<label class="test"><input type="checkbox"> Voasedra ny rohy, bokotra, formulaire ary hafatra diso.</label>
+<label class="test"><input type="checkbox"> Nohamarinin'ny olona mahay fiarovana ny backend sy ny configuration.</label>
+<label class="test"><input type="checkbox"> Vonona ny Privacy Policy, Terms of Service ary fomba hifandraisana.</label>
+</div>
+<p id="manualCount" class="muted">0 / 9 vita</p>
+</section>
+<section class="card">
+<h2>🧭 Fanapahan-kevitra momba ny famoahana</h2>
+<p><strong>Toe-javatra amin'izao:</strong> prototype HTML maromaro ny G. Tsy mbola ampy ny fitsapana navigateur irery mba hilazana fa vonona ho an'ny daholobe.</p>
+<ul>
+<li>Ilaina ny mampifandray ireo pejy amin'ny backend sy database tena izy.</li>
+<li>Ilaina ny manamarina ny kaonty, ny permissions ary ny RLS.</li>
+<li>Ilaina ny fitsapana fiarovana sy ny fanamarinana ara-dalàna mifanaraka amin'ny firenena kendrena.</li>
+</ul>
+<p><strong>Torohevitra:</strong> Aza mandefa angona tena manokana na mampiasa azy ho serivisy public raha mbola tsy vita ireo dingana ireo.</p>
+</section>
+</main>
+<footer>G · Day 11 Security & Quality Checks · Fitaovana fanampiny ho an'ny prototype</footer>
+<script>
+function setStatus(id,ok,label){const e=document.getElementById(id);e.textContent=label;e.className='status '+(ok?'pass':'fail')}
+function runTests(){
+ let passed=0,total=6;
+ setStatus('t-js',true,'OK');passed++;
+ let storage=false,write=false;
+ try{localStorage.setItem('__g_test__','ok');storage=localStorage.getItem('__g_test__')==='ok';localStorage.removeItem('__g_test__')}catch(e){}
+ setStatus('t-storage',storage,storage?'OK':'Tsy azo ampiasaina');if(storage)passed++;
+ try{localStorage.setItem('__g_write_test__','G');write=localStorage.getItem('__g_write_test__')==='G';localStorage.removeItem('__g_write_test__')}catch(e){}
+ setStatus('t-write',write,write?'OK':'Tsy nahomby');if(write)passed++;
+ const secure=window.isSecureContext===true;setStatus('t-https',secure,secure?'Secure context':'Tsy secure context');if(secure)passed++;
+ const screenOk=window.innerWidth>=320;setStatus('t-screen',screenOk,screenOk?'Viewport OK':'Ecran tery loatra');if(screenOk)passed++;
+ let themeOk=false;try{document.documentElement.dataset.theme='dark';themeOk=document.documentElement.dataset.theme==='dark';document.documentElement.dataset.theme=localStorage.getItem('gSecurityTheme')||'light'}catch(e){}
+ setStatus('t-theme',themeOk,themeOk?'OK':'Tsy voamarina');if(themeOk)passed++;
+ document.getElementById('bar').style.width=(passed/total*100)+'%';
+ document.getElementById('summary').textContent=passed+' / '+total+' fitsapana fototra no nandalo. Tsy midika izany fa voamarina ny fiarovana manontolo.';
+}
+function toggleTheme(){const next=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=next;try{localStorage.setItem('gSecurityTheme',next)}catch(e){}}
+try{document.documentElement.dataset.theme=localStorage.getItem('gSecurityTheme')||'light'}catch(e){}
+function countManual(){const boxes=[...document.querySelectorAll('#manual input')];const n=boxes.filter(x=>x.checked).length;document.getElementById('manualCount').textContent=n+' / '+boxes.length+' vita'}
+document.querySelectorAll('#manual input').forEach(x=>x.addEventListener('change',countManual));
+</script>
+</body></html>
