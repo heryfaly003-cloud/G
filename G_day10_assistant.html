@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G — Assistant</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--text:#182235;--muted:#667085;--accent:#2563eb;--line:#e5eaf2;--soft:#eaf1ff}
+[data-theme="dark"]{--bg:#101827;--card:#1b2638;--text:#edf2fb;--muted:#aab6c8;--accent:#7aa7ff;--line:#344258;--soft:#263957}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+header{padding:22px 16px;background:linear-gradient(120deg,#173b80,#2876d8);color:white}
+.wrap{max-width:1000px;margin:auto;padding:0 16px}header h1{margin:0 0 5px;font-size:28px}header p{margin:0;opacity:.9}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}button,.btn{border:0;border-radius:10px;padding:10px 14px;background:var(--accent);color:white;font-weight:600;cursor:pointer}
+button.secondary{background:var(--soft);color:var(--text);border:1px solid var(--line)}
+button:focus,input:focus,textarea:focus,select:focus{outline:3px solid #8bb4ff;outline-offset:2px}
+main{padding:20px 0 40px}.grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 5px 20px #1020400a}
+h2{font-size:20px;margin:0 0 12px}.muted{color:var(--muted);font-size:14px}
+textarea,input,select{width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text);margin:6px 0 12px;font:inherit}
+textarea{min-height:90px;resize:vertical}.quick{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}
+.quick button{font-size:13px;padding:8px 10px}.answer{white-space:pre-wrap;background:var(--soft);border-radius:12px;padding:14px;margin-top:12px;min-height:80px}
+.item{padding:12px 0;border-bottom:1px solid var(--line)}.item:last-child{border:0}.item strong{display:block}.pill{display:inline-block;background:var(--soft);padding:4px 8px;border-radius:20px;font-size:12px;margin:3px 4px 3px 0}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:20px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}header h1{font-size:24px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>🤖 G Assistant</h1>
+<p>Mpanampy amin'ny fitetezana sy fampiasana ny sehatra G.</p>
+</div></header>
+<main class="wrap">
+<nav>
+<button class="secondary" onclick="showSection('assistant')">Assistant</button>
+<button class="secondary" onclick="showSection('guide')">Torolalana</button>
+<button class="secondary" onclick="showSection('feedback')">Feedback</button>
+<button class="secondary" onclick="toggleTheme()">🌙 / ☀️ Maody</button>
+</nav>
+<section id="assistant">
+<div class="grid">
+<div class="card">
+<h2>Inona no azoko anampiana anao?</h2>
+<p class="muted">Safidio ny lohahevitra na soraty eto ny fanontanianao.</p>
+<div class="quick">
+<button onclick="ask('Ahoana no fampiasana G Social?')">G Social</button>
+<button onclick="ask('Ahoana no fitadiavana asa ao amin’ny G Jobs?')">G Jobs</button>
+<button onclick="ask('Ahoana no fampiasana G Academy?')">G Academy</button>
+<button onclick="ask('Ahoana no fametrahana tolotra ao amin’ny G Services?')">G Services</button>
+<button onclick="ask('Ahoana no fanomanana dia ao amin’ny G Travel?')">G Travel</button>
+<button onclick="ask('Ahoana no fametrahana vokatra ao amin’ny Marketplace?')">Marketplace</button>
+</div>
+<label for="question"><strong>Fanontanianao</strong></label>
+<textarea id="question" placeholder="Ohatra: Ahoana no fomba hitadiavako asa?"></textarea>
+<button onclick="answerQuestion()">Valio</button>
+<div id="answer" class="answer" aria-live="polite">Eto no hiseho ny torolalana.</div>
+<p class="muted">Demo: valiny voaomana mialoha ihany no aseho. Tsy mbola AI mifandray amin'ny serveur ity Assistant ity.</p>
+</div>
+<div class="card">
+<h2>Sehatra ao amin'ny G</h2>
+<div class="item"><strong>🌐 G Social</strong><span class="muted">Mifandray, mizara lahatsoratra ary mifampiresaka.</span></div>
+<div class="item"><strong>💼 G Jobs</strong><span class="muted">Mitady asa sy mampahafantatra tolotr'asa.</span></div>
+<div class="item"><strong>🎓 G Academy</strong><span class="muted">Mianatra lohahevitra sy taranja maro.</span></div>
+<div class="item"><strong>🛍️ G Marketplace</strong><span class="muted">Mampiseho vokatra sy tolotra amidy.</span></div>
+<div class="item"><strong>✈️ G Travel</strong><span class="muted">Mitady toerana sy mandamina dia.</span></div>
+<div class="item"><strong>🧰 G Services</strong><span class="muted">Mitady na manolotra asa sy fahaiza-manao.</span></div>
+</div>
+</div>
+</section>
+<section id="guide" hidden>
+<div class="card">
+<h2>Torolalana haingana</h2>
+<div class="item"><strong>1. Mamorona kaonty</strong><span class="muted">Rehefa ampifandraisina amin'ny rafitra Auth ny G, araho ny dingana fisoratana anarana ary arovy ny tenimiafinao.</span></div>
+<div class="item"><strong>2. Fenoy ny mombamomba anao</strong><span class="muted">Ampidiro ny anarana aseho sy ny fampahalalana tianao hozaraina. Aza mampiditra tsiambaratelo.</span></div>
+<div class="item"><strong>3. Mifidiana sehatra</strong><span class="muted">Ampiasao ny menio mifanaraka amin'ny zavatra tadiavinao: fianarana, asa, dia, serivisy na tambajotra sosialy.</span></div>
+<div class="item"><strong>4. Mitandrema</strong><span class="muted">Hamarino ny olona sy ny tolotra. Aza mandefa vola na antontan-taratasy manokana amin'ny olona tsy voamarina.</span></div>
+<div class="item"><strong>5. Mitatitra olana</strong><span class="muted">Ampiasao ny Feedback/Report rehefa mahita hosoka, fanorisorenana na votoaty tsy mety.</span></div>
+</div>
+</section>
+<section id="feedback" hidden>
+<div class="card">
+<h2>Hevitra sy tatitra</h2>
+<p class="muted">Ampiasao ity endrika demo ity hanoratana olana na soso-kevitra momba ny G.</p>
+<label for="kind">Karazana hafatra</label>
+<select id="kind"><option>Soso-kevitra</option><option>Olana ara-teknika</option><option>Tatitra momba votoaty</option><option>Fanontaniana</option></select>
+<label for="message">Hafatra</label>
+<textarea id="message" placeholder="Soraty eto ny hafatrao..."></textarea>
+<button onclick="sendFeedback()">Tehirizo eto amin'ny fitaovana</button>
+<p id="feedbackStatus" class="muted" aria-live="polite"></p>
+</div>
+</section>
+</main>
+<footer>G Assistant · Prototype Andro faha-10 · Tsy mbola mifandray amin'ny serveur.</footer>
+<script>
+const guides=[
+{keys:['social','tambajotra','post','hafatra'],text:'G Social: afaka mizara lahatsoratra, mamaly, maneho hevitra ary mifandray amin’ny olona ianao. Aza mizara adiresy, tenimiafina na mombamomba manokana.'},
+{keys:['asa','job','emploi','jobs'],text:'G Jobs: tadiavo amin’ny teny fanalahidy, fahaiza-manao na firenena ny asa. Vakio tsara ny fepetra. Mitandrema amin’ny olona mangataka vola mialoha na antontan-taratasy saro-pady.'},
+{keys:['academy','fianarana','mianatra','cours'],text:'G Academy: fidio ny sokajin-taranja sy ny ambaratonga, sokafy ny lesona ary araho ny fanazaran-tena. Ahitana siansa, fiteny, teknolojia, humanities, zavakanto ary fivavahana.'},
+{keys:['market','vokatra','mivarotra','vidy'],text:'Marketplace: tadiavo araka ny sokajy sy toerana ny vokatra. Jereo ny antsipiriany sy ny mpivarotra, ary aza mandoa vola raha tsy azonao antoka ny fifanarahana.'},
+{keys:['travel','dia','fitsangatsanganana','toerana'],text:'G Travel: tadiavo ny toerana haleha, vakio ny fampahalalana ary ampiasao ny mpandrindra dia hitahirizana daty sy teti-bola. Hamarino amin’ny loharano ofisialy ny visa sy ny fepetra fidirana.'},
+{keys:['service','serivisy','tolotra','fahaiza'],text:'G Services: tadiavo araka ny sokajy sy toerana ny tolotra. Raha manolotra serivisy ianao dia soraty mazava ny asa, ny toerana ary ny fomba fifandraisana azo antoka.'}
+];
+function ask(q){document.getElementById('question').value=q;answerQuestion()}
+function answerQuestion(){
+ const q=document.getElementById('question').value.toLowerCase().trim();let found=guides.find(g=>g.keys.some(k=>q.includes(k)));
+ document.getElementById('answer').textContent=q?(found?found.text:'Mbola tsy manana valiny voaomana momba izany aho. Azonao atao ny mijery ny Torolalana na mandefa Feedback. Ity dia prototype ka tsy mbola mampiasa AI mivantana.'): 'Soraty aloha ny fanontanianao.';
+}
+function showSection(id){['assistant','guide','feedback'].forEach(x=>document.getElementById(x).hidden=x!==id)}
+function toggleTheme(){document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark';localStorage.setItem('gAssistantTheme',document.documentElement.dataset.theme)}
+if(localStorage.getItem('gAssistantTheme'))document.documentElement.dataset.theme=localStorage.getItem('gAssistantTheme');
+function sendFeedback(){
+ const msg=document.getElementById('message').value.trim(),kind=document.getElementById('kind').value;
+ if(!msg){document.getElementById('feedbackStatus').textContent='Ampidiro aloha ny hafatra.';return}
+ const old=JSON.parse(localStorage.getItem('gAssistantFeedback')||'[]');old.push({kind,message:msg,date:new Date().toISOString()});localStorage.setItem('gAssistantFeedback',JSON.stringify(old));
+ document.getElementById('message').value='';document.getElementById('feedbackStatus').textContent='Voatahiry eto amin’ity navigateur ity ny hafatra. Tsy mbola nalefa amin’ny ekipa G.';
+}
+</script>
+</body></html>
