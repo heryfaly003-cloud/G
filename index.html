@@ -34,7 +34,7 @@
 
 </style></head>
 <body>
-<header><div class="top"><div><div class="logo">G.</div><div class="tag">ONE WORLD. ONE PLATFORM.</div></div><label class="search">🔎 <input id="search" placeholder="Mitadiava olona, asa, vokatra, lesona, toerana…" aria-label="Search"></label><button class="theme-toggle" id="themeToggle" type="button" aria-label="Activate dark mode" aria-pressed="false">🌙 Dark</button><select class="lang" id="lang" aria-label="Language"><option value="mg">🇲🇬 MG</option><option value="fr">🇫🇷 FR</option><option value="en">🇬🇧 EN</option><option value="es">🇪🇸 ES</option></select></div></header>
+<header><div class="top"><div><div class="logo">G.</div><div class="tag">ONE WORLD. ONE PLATFORM.</div></div><label class="search">🔎 <input id="search" placeholder="Mitadiava olona, asa, vokatra, lesona, toerana…" aria-label="Search"></label><button class="theme-toggle" id="themeToggle" type="button" aria-label="Activate dark mode" aria-pressed="false">🌙 Dark</button><select class="lang" id="lang" aria-label="Language"><option value="mg">🇲🇬 MG</option><option value="fr">🇫🇷 FR</option><option value="en">🇬🇧 EN</option><option value="es">🇪🇸 Español</option><option value="pt">🇧🇷 Português</option><option value="de">🇩🇪 Deutsch</option><option value="it">🇮🇹 Italiano</option><option value="ru">🇷🇺 Русский</option><option value="zh">🇨🇳 中文</option><option value="hi">🇮🇳 हिन्दी</option><option value="ja">🇯🇵 日本語</option><option value="ko">🇰🇷 한국어</option><option value="ar">🇸🇦 العربية</option><option value="tr">🇹🇷 Türkçe</option><option value="id">🇮🇩 Bahasa Indonesia</option></select></div></header>
 <nav class="main-nav" aria-label="Fikarohana lehibe">
 <a href="#socialWorkspace">👥 Social</a><a href="#marketplace">🛒 Marketplace</a><a href="#jobs">💼 G Jobs</a><a href="#academy">🎓 Academy</a><a href="#travel">✈️ Travel</a><a href="#support">🛠️ Fanampiana</a>
 </nav>
@@ -186,7 +186,23 @@
 <div class="notice">⚠️ Ity dia santionany voalohany (prototype) mampiseho ny endrika sy ny sokajy. Mbola tsy misy kaonty tena izy, chat mivantana, fandoavam-bola, tahiry angona, fanamarinana orinasa tena izy, fandefasana fangatahana asa, na fanohanana mpanjifa miasa. Mila amboarina sy sedraina ireo, ary ampiana fiarovana sy politika momba ny tsiambaratelo, alohan'ny famoahana ampahibemaso.</div>
 </main><footer>G © 2026 — One World. One Platform. Everyone Belongs.</footer>
 <script>
-const translations={mg:{welcome:'Tongasoa eto amin’ny G',intro:'Sehatra iray mampifandray olona, fahalalana, varotra ary kolontsaina maneran-tany.',social:'👥 Tambajotra sosialy'},fr:{welcome:'Bienvenue sur G',intro:'Une plateforme qui relie les personnes, le savoir, le commerce et les cultures du monde entier.',social:'👥 Réseau social'},en:{welcome:'Welcome to G',intro:'One platform connecting people, knowledge, commerce and cultures around the world.',social:'👥 Social Network'},es:{welcome:'Bienvenido a G',intro:'Una plataforma que conecta personas, conocimiento, comercio y culturas de todo el mundo.',social:'👥 Red social'}};
+const translations={
+mg:{welcome:'Tongasoa eto amin’ny G',intro:'Sehatra iray mampifandray olona, fahalalana, varotra ary kolontsaina maneran-tany.',social:'👥 Tambajotra sosialy'},
+fr:{welcome:'Bienvenue sur G',intro:'Une plateforme qui relie les personnes, le savoir, le commerce et les cultures du monde entier.',social:'👥 Réseau social'},
+en:{welcome:'Welcome to G',intro:'One platform connecting people, knowledge, commerce and cultures around the world.',social:'👥 Social Network'},
+es:{welcome:'Bienvenido a G',intro:'Una plataforma que conecta personas, conocimiento, comercio y culturas de todo el mundo.',social:'👥 Red social'},
+pt:{welcome:'Bem-vindo ao G',intro:'Uma plataforma que conecta pessoas, conhecimento, comércio e culturas do mundo.',social:'👥 Rede social'},
+de:{welcome:'Willkommen bei G',intro:'Eine Plattform, die Menschen, Wissen, Handel und Kulturen weltweit verbindet.',social:'👥 Soziales Netzwerk'},
+it:{welcome:'Benvenuto su G',intro:'Una piattaforma che connette persone, conoscenza, commercio e culture di tutto il mondo.',social:'👥 Rete sociale'},
+ru:{welcome:'Добро пожаловать в G',intro:'Платформа, объединяющая людей, знания, торговлю и культуры всего мира.',social:'👥 Социальная сеть'},
+zh:{welcome:'欢迎来到 G',intro:'一个连接世界各地的人们、知识、商业与文化的平台。',social:'👥 社交网络'},
+hi:{welcome:'G में आपका स्वागत है',intro:'दुनिया भर के लोगों, ज्ञान, व्यापार और संस्कृतियों को जोड़ने वाला मंच।',social:'👥 सोशल नेटवर्क'},
+ja:{welcome:'Gへようこそ',intro:'世界中の人々、知識、ビジネス、文化をつなぐプラットフォーム。',social:'👥 ソーシャルネットワーク'},
+ko:{welcome:'G에 오신 것을 환영합니다',intro:'전 세계 사람, 지식, 상업 및 문화를 연결하는 플랫폼입니다.',social:'👥 소셜 네트워크'},
+ar:{welcome:'مرحبًا بكم في G',intro:'منصة تربط الناس والمعرفة والتجارة والثقافات حول العالم.',social:'👥 شبكة اجتماعية'},
+tr:{welcome:"G'ye hoş geldiniz",intro:'Dünyanın dört bir yanındaki insanları, bilgiyi, ticareti ve kültürleri buluşturan platform.',social:'👥 Sosyal ağ'},
+id:{welcome:'Selamat datang di G',intro:'Platform yang menghubungkan orang, pengetahuan, perdagangan, dan budaya di seluruh dunia.',social:'👥 Jejaring sosial'}
+};
 const root=document.documentElement;
 const themeToggle=document.getElementById('themeToggle');
 function setTheme(theme){root.dataset.theme=theme;const dark=theme==='dark';themeToggle.textContent=dark?'☀️ Light':'🌙 Dark';themeToggle.setAttribute('aria-pressed',String(dark));themeToggle.setAttribute('aria-label',dark?'Activate light mode':'Activate dark mode');try{localStorage.setItem('g-theme',theme)}catch(e){}}
