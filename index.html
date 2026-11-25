@@ -1,13 +1,15 @@
 <!doctype html>
+<!DOCTYPE html>
+
 <html lang="mg">
 <head>
-<meta charset="utf-8"><meta name="g-build" content="day-7-jobs-prototype"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="G — sehatra iraisam-pirenena mampifandray olona, fahalalana, varotra ary asa.">
-<title>G — One World. One Platform. | Day 7 Jobs</title>
+<meta charset="utf-8"/><meta content="day-7-jobs-prototype" name="g-build"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="G — sehatra iraisam-pirenena mampifandray olona, fahalalana, varotra ary asa." name="description"/>
+<title>G — One World. One Platform.</title>
 <style>
 :root{color-scheme:light;--ink:#17233b;--blue:#2457d6;--sky:#eaf0ff;--muted:#667085;--line:#e5e9f2;--bg:#f7f9fd;--surface:#fff;--search:#f2f4f8;--notice-bg:#fff8e8;--notice-line:#f3dfb1;--notice-ink:#72521b}
-:root[data-theme="dark"]{color-scheme:dark;--ink:#edf2ff;--blue:#8eabff;--sky:#263653;--muted:#aab5c8;--line:#344158;--bg:#101827;--surface:#1a2638;--search:#253248;--notice-bg:#3a3020;--notice-line:#66502a;--notice-ink:#f3d99e}*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg)}header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.top{max-width:1120px;margin:auto;padding:14px 20px;display:flex;gap:18px;align-items:center}.logo{font-size:30px;font-weight:900;color:var(--blue);letter-spacing:-2px}.tag{font-size:12px;color:var(--muted)}.search{flex:1;display:flex;background:var(--search);border-radius:30px;padding:10px 16px;gap:8px}.search input{border:0;outline:0;background:transparent;width:100%;font-size:15px}.lang{border:1px solid var(--line);padding:9px;border-radius:10px;background:var(--surface);color:var(--ink)}.theme-toggle{border:1px solid var(--line);padding:9px 12px;border-radius:10px;background:var(--surface);color:var(--ink);font-weight:600}.theme-toggle:focus-visible,.lang:focus-visible,.search input:focus-visible{outline:3px solid var(--blue);outline-offset:2px}main{max-width:1120px;margin:28px auto;padding:0 20px}.hero{background:linear-gradient(120deg,#142b68,#3269df);color:white;border-radius:22px;padding:34px;display:flex;justify-content:space-between;gap:20px;align-items:center}.hero h1{font-size:clamp(28px,5vw,46px);margin:0 0 10px}.hero p{margin:0;opacity:.9;max-width:600px;line-height:1.5}.badge{font-size:48px}.section-title{margin:30px 0 14px;font-size:22px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:19px;min-height:132px;box-shadow:0 3px 12px #17233b08}.card .icon{font-size:27px}.card h3{margin:10px 0 6px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}.wide{grid-column:1/-1}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.chip{background:var(--sky);color:var(--blue);padding:7px 11px;border-radius:20px;font-size:12px}.notice{background:var(--notice-bg);border:1px solid var(--notice-line);padding:14px 16px;border-radius:12px;color:var(--notice-ink);line-height:1.5;margin-top:22px;font-size:13px}footer{text-align:center;color:var(--muted);padding:35px 20px;font-size:13px}button{cursor:pointer} .hidden{display:none}
+:root[data-theme="dark"]{color-scheme:dark;--ink:#edf2ff;--blue:#8eabff;--sky:#263653;--muted:#aab5c8;--line:#344158;--bg:#101827;--surface:#1a2638;--search:#253248;--notice-bg:#3a3020;--notice-line:#66502a;--notice-ink:#f3d99e}*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg)}header{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.top{max-width:1120px;margin:auto;padding:14px 20px;display:flex;gap:18px;align-items:center}.logo{font-size:32px;font-weight:950;letter-spacing:-2px;background:linear-gradient(120deg,#2463e8 0%,#2457d6 48%,#e34b58 72%,#171923 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 2px 12px #2457d633;filter:drop-shadow(0 1px 1px #1113)}.tag{font-size:12px;color:var(--muted)}.search{flex:1;display:flex;background:var(--search);border-radius:30px;padding:10px 16px;gap:8px}.search input{border:0;outline:0;background:transparent;width:100%;font-size:15px}.lang{border:1px solid var(--line);padding:9px;border-radius:10px;background:var(--surface);color:var(--ink)}.theme-toggle{border:1px solid var(--line);padding:9px 12px;border-radius:10px;background:var(--surface);color:var(--ink);font-weight:600}.theme-toggle:focus-visible,.lang:focus-visible,.search input:focus-visible{outline:3px solid var(--blue);outline-offset:2px}main{max-width:1120px;margin:28px auto;padding:0 20px}.hero{background:linear-gradient(120deg,#142b68,#3269df);color:white;border-radius:22px;padding:34px;display:flex;justify-content:space-between;gap:20px;align-items:center}.hero h1{font-size:clamp(28px,5vw,46px);margin:0 0 10px}.hero p{margin:0;opacity:.9;max-width:600px;line-height:1.5}.badge{font-size:48px}.section-title{margin:30px 0 14px;font-size:22px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:19px;min-height:132px;box-shadow:0 3px 12px #17233b08}.card .icon{font-size:27px}.card h3{margin:10px 0 6px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}.wide{grid-column:1/-1}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.chip{background:var(--sky);color:var(--blue);padding:7px 11px;border-radius:20px;font-size:12px}.notice{background:var(--notice-bg);border:1px solid var(--notice-line);padding:14px 16px;border-radius:12px;color:var(--notice-ink);line-height:1.5;margin-top:22px;font-size:13px}footer{text-align:center;color:var(--muted);padding:35px 20px;font-size:13px}button{cursor:pointer} .hidden{display:none}
 
-.main-nav{max-width:1120px;margin:auto;padding:0 20px 12px;display:flex;gap:8px;overflow-x:auto;white-space:nowrap;scrollbar-width:thin}.main-nav a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:700;padding:8px 11px;border:1px solid var(--line);border-radius:20px;background:var(--surface)}.main-nav a:hover,.main-nav a:focus-visible{color:var(--blue);border-color:var(--blue);outline-offset:2px}.section-lead{color:var(--muted);line-height:1.55;max-width:850px;margin:-4px 0 16px}.job-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 12px}.job-tab,.secondary-btn,.primary-btn,.icon-btn{border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-weight:700;background:var(--surface);color:var(--ink)}.job-tab.active{background:var(--blue);border-color:var(--blue);color:white}.job-panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:18px}.job-panel-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:16px}.job-panel-head h3{margin:0 0 6px;font-size:20px}.job-panel-head p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}.demo-tag,.safety-tag{font-size:10px;letter-spacing:.5px;font-weight:800;padding:6px 9px;border-radius:20px;background:var(--sky);color:var(--blue);white-space:nowrap}.safety-tag{background:var(--notice-bg);color:var(--notice-ink)}.job-filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.job-filters label,.job-form label,.subpanel>label{display:flex;flex-direction:column;gap:6px;font-size:12px;font-weight:700;color:var(--muted)}.job-filters input,.job-filters select,.job-form input,.job-form select,.job-form textarea,.subpanel>label input{width:100%;min-width:0;border:1px solid var(--line);border-radius:9px;padding:10px;background:var(--bg);color:var(--ink);font:inherit;font-size:14px}.job-form textarea{resize:vertical}.filter-actions{display:flex;gap:8px;align-items:end}.primary-btn{background:var(--blue);border-color:var(--blue);color:white}.primary-btn:hover,.job-tab:hover,.secondary-btn:hover{filter:brightness(.96)}.results-line{display:flex;gap:6px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin:18px 0 10px}.results-line strong{color:var(--ink)}.job-listings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.job-card{border:1px solid var(--line);border-radius:13px;padding:15px;background:var(--bg)}.job-card h4{font-size:16px;margin:0 0 5px}.job-company{font-size:12px;color:var(--muted);margin-bottom:10px}.job-meta{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.job-pill{background:var(--sky);color:var(--blue);font-size:11px;padding:5px 8px;border-radius:20px}.job-card p{font-size:13px;line-height:1.5;color:var(--muted)}.job-card .small-note{font-size:11px}.saved-jobs-bar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:12px;border:1px solid var(--line);border-radius:12px;margin:12px 0;background:var(--bg)}.job-card-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.job-save-btn{border:1px solid var(--line);border-radius:9px;padding:9px 12px;background:var(--surface);color:var(--ink);font-weight:700}.job-save-btn[aria-pressed="true"]{background:var(--sky);color:var(--blue);border-color:var(--blue)}.application-box{border:1px dashed var(--blue);border-radius:14px;padding:16px;margin-top:16px}.job-form{display:grid;gap:11px}.small-note{font-size:11px;color:var(--muted);line-height:1.5;margin:10px 0 0}.inline-notice{margin-top:12px;padding:11px;border-radius:9px;background:var(--sky);color:var(--ink);font-size:13px;line-height:1.5}.icon-btn{padding:5px 9px}.employer-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}.subpanel{border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}.subpanel h4{margin:0 0 14px;font-size:16px}.form-two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.check-line{display:flex!important;flex-direction:row!important;align-items:flex-start;color:var(--ink)!important;line-height:1.45}.check-line input{width:auto!important;margin-top:2px}.candidate-list{display:grid;gap:9px;margin-top:12px}.candidate-card{border:1px solid var(--line);border-radius:10px;padding:11px}.candidate-card strong{font-size:13px}.candidate-card p{font-size:12px;color:var(--muted);margin:5px 0}.verification-box{margin-top:14px;padding:13px;border-radius:11px;background:var(--bg);font-size:12px;line-height:1.55}.verification-box ol{padding-left:19px;color:var(--muted)}.status-pending{display:inline-block;color:var(--notice-ink);background:var(--notice-bg);padding:6px 8px;border-radius:8px;font-size:11px;font-weight:700}.safety-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.safety-card{padding:13px;border:1px solid var(--line);border-radius:12px}.safety-card strong{font-size:13px}.safety-card p{font-size:12px;color:var(--muted);line-height:1.5;margin:6px 0 0}.report-panel{margin-top:14px}.main-nav a:focus-visible,.job-tab:focus-visible,.primary-btn:focus-visible,.secondary-btn:focus-visible,.icon-btn:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.main-nav{max-width:1120px;margin:auto;padding:0 20px 12px;display:flex;gap:8px;overflow-x:auto;white-space:nowrap;scrollbar-width:thin}.main-nav:not(.compact-nav){display:none}.main-nav a{color:var(--muted);text-decoration:none;font-size:13px;font-weight:700;padding:8px 11px;border:1px solid var(--line);border-radius:20px;background:var(--surface)}.main-nav a:hover,.main-nav a:focus-visible{color:var(--blue);border-color:var(--blue);outline-offset:2px}.section-lead{color:var(--muted);line-height:1.55;max-width:850px;margin:-4px 0 16px}.job-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 12px}.job-tab,.secondary-btn,.primary-btn,.icon-btn{border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-weight:700;background:var(--surface);color:var(--ink)}.job-tab.active{background:var(--blue);border-color:var(--blue);color:white}.job-panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px;margin-bottom:18px}.job-panel-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:16px}.job-panel-head h3{margin:0 0 6px;font-size:20px}.job-panel-head p{margin:0;color:var(--muted);font-size:13px;line-height:1.5}.demo-tag,.safety-tag{font-size:10px;letter-spacing:.5px;font-weight:800;padding:6px 9px;border-radius:20px;background:var(--sky);color:var(--blue);white-space:nowrap}.safety-tag{background:var(--notice-bg);color:var(--notice-ink)}.job-filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.job-filters label,.job-form label,.subpanel>label{display:flex;flex-direction:column;gap:6px;font-size:12px;font-weight:700;color:var(--muted)}.job-filters input,.job-filters select,.job-form input,.job-form select,.job-form textarea,.subpanel>label input{width:100%;min-width:0;border:1px solid var(--line);border-radius:9px;padding:10px;background:var(--bg);color:var(--ink);font:inherit;font-size:14px}.job-form textarea{resize:vertical}.filter-actions{display:flex;gap:8px;align-items:end}.primary-btn{background:var(--blue);border-color:var(--blue);color:white}.primary-btn:hover,.job-tab:hover,.secondary-btn:hover{filter:brightness(.96)}.results-line{display:flex;gap:6px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin:18px 0 10px}.results-line strong{color:var(--ink)}.job-listings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.job-card{border:1px solid var(--line);border-radius:13px;padding:15px;background:var(--bg)}.job-card h4{font-size:16px;margin:0 0 5px}.job-company{font-size:12px;color:var(--muted);margin-bottom:10px}.job-meta{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.job-pill{background:var(--sky);color:var(--blue);font-size:11px;padding:5px 8px;border-radius:20px}.job-card p{font-size:13px;line-height:1.5;color:var(--muted)}.job-card .small-note{font-size:11px}.saved-jobs-bar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:12px;border:1px solid var(--line);border-radius:12px;margin:12px 0;background:var(--bg)}.job-card-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.job-save-btn{border:1px solid var(--line);border-radius:9px;padding:9px 12px;background:var(--surface);color:var(--ink);font-weight:700}.job-save-btn[aria-pressed="true"]{background:var(--sky);color:var(--blue);border-color:var(--blue)}.application-box{border:1px dashed var(--blue);border-radius:14px;padding:16px;margin-top:16px}.job-form{display:grid;gap:11px}.small-note{font-size:11px;color:var(--muted);line-height:1.5;margin:10px 0 0}.inline-notice{margin-top:12px;padding:11px;border-radius:9px;background:var(--sky);color:var(--ink);font-size:13px;line-height:1.5}.icon-btn{padding:5px 9px}.employer-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}.subpanel{border:1px solid var(--line);border-radius:14px;padding:16px;min-width:0}.subpanel h4{margin:0 0 14px;font-size:16px}.form-two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.check-line{display:flex!important;flex-direction:row!important;align-items:flex-start;color:var(--ink)!important;line-height:1.45}.check-line input{width:auto!important;margin-top:2px}.candidate-list{display:grid;gap:9px;margin-top:12px}.candidate-card{border:1px solid var(--line);border-radius:10px;padding:11px}.candidate-card strong{font-size:13px}.candidate-card p{font-size:12px;color:var(--muted);margin:5px 0}.verification-box{margin-top:14px;padding:13px;border-radius:11px;background:var(--bg);font-size:12px;line-height:1.55}.verification-box ol{padding-left:19px;color:var(--muted)}.status-pending{display:inline-block;color:var(--notice-ink);background:var(--notice-bg);padding:6px 8px;border-radius:8px;font-size:11px;font-weight:700}.safety-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.safety-card{padding:13px;border:1px solid var(--line);border-radius:12px}.safety-card strong{font-size:13px}.safety-card p{font-size:12px;color:var(--muted);line-height:1.5;margin:6px 0 0}.report-panel{margin-top:14px}.main-nav a:focus-visible,.job-tab:focus-visible,.primary-btn:focus-visible,.secondary-btn:focus-visible,.icon-btn:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
 @media(max-width:760px){.job-filters{grid-template-columns:repeat(2,minmax(0,1fr))}.employer-grid{grid-template-columns:1fr}.job-listings{grid-template-columns:1fr}}
 @media(max-width:480px){.job-panel{padding:14px}.job-panel-head{flex-direction:column}.job-filters,.form-two,.safety-grid{grid-template-columns:1fr}.filter-actions{align-items:stretch}.filter-actions button{flex:1}}
 
@@ -23,6 +25,21 @@
 
 
 /* G Academy learning experience */
+/* G Academy external learning partners: consistent logo cards */
+.academy-external .academy-courses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:stretch}
+.academy-external .academy-course{display:flex;flex-direction:column;min-width:0;min-height:230px;padding:16px;background:var(--surface);box-shadow:0 3px 12px #17233b0a;transition:transform .18s ease,box-shadow .18s ease}
+.academy-external .academy-course:hover{transform:translateY(-2px);box-shadow:0 8px 22px #17233b12}
+.academy-external .academy-brand{display:flex;align-items:center;gap:11px;min-height:48px;padding-bottom:11px;border-bottom:1px solid var(--line);margin-bottom:10px}
+.academy-external .academy-brand img{width:42px;height:42px;object-fit:contain;border-radius:10px;background:#fff;padding:5px;border:1px solid var(--line);flex:0 0 42px}
+.academy-external .academy-brand .brand-fallback{display:none;width:42px;height:42px;flex:0 0 42px;border-radius:10px;place-items:center;background:var(--sky);color:var(--blue);font-weight:900;font-size:16px;border:1px solid var(--line)}
+.academy-external .academy-brand h4{margin:0;font-size:14px;line-height:1.3}
+.academy-external .academy-course p{min-height:0;flex:1}
+.academy-external .academy-course>a{display:inline-flex;align-items:center;justify-content:center;align-self:flex-start;margin-top:3px;padding:9px 12px;border-radius:9px;background:var(--blue);color:#fff;text-decoration:none;font-size:12px;font-weight:750}
+.academy-external .academy-course>a:hover{filter:brightness(1.08)}
+.academy-external .academy-course>a:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+@media(max-width:900px){.academy-external .academy-courses{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.academy-external{padding:12px!important}.academy-external .academy-courses{grid-template-columns:1fr}.academy-external .academy-course{min-height:0}}
+
 .academy-shell{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px;margin:12px 0 28px}.academy-welcome{background:linear-gradient(115deg,#172d68,#3973e8);color:#fff;border-radius:15px;padding:22px;display:flex;justify-content:space-between;gap:16px;align-items:center}.academy-kicker{font-size:10px;letter-spacing:1.5px;font-weight:800;opacity:.8}.academy-welcome h3{font-size:23px;margin:8px 0}.academy-welcome p{margin:0;opacity:.9;font-size:13px;line-height:1.5}.academy-stat{min-width:90px;text-align:center;background:#ffffff20;border:1px solid #ffffff50;border-radius:13px;padding:12px}.academy-stat strong{display:block;font-size:28px}.academy-stat span{font-size:11px}.academy-tools{display:grid;grid-template-columns:1fr 190px;gap:10px;margin:16px 0}.academy-search{display:flex;gap:9px;align-items:center;border:1px solid var(--line);border-radius:10px;padding:0 12px;background:var(--bg)}.academy-search input{width:100%;border:0;outline:0;padding:12px 0;background:transparent;color:var(--ink);font:inherit}.academy-tools select{border:1px solid var(--line);border-radius:10px;padding:10px;background:var(--bg);color:var(--ink)}.academy-categories{display:flex;gap:7px;overflow:auto;padding:2px 0 12px}.academy-filter{white-space:nowrap;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:20px;padding:8px 12px;font-size:12px}.academy-filter.active{background:var(--blue);color:#fff;border-color:var(--blue)}.academy-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:14px;align-items:start}.academy-result-head{display:flex;justify-content:space-between;gap:8px;align-items:center;margin:6px 0 10px;font-size:13px}.academy-courses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.academy-course{border:1px solid var(--line);border-radius:13px;padding:13px;background:var(--bg)}.academy-course .course-icon{font-size:25px}.academy-course h4{font-size:14px;margin:8px 0 5px}.academy-course p{font-size:12px;color:var(--muted);line-height:1.45;min-height:34px;margin:0 0 9px}.course-meta{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px}.course-meta span{font-size:10px;padding:4px 7px;border-radius:15px;background:var(--sky);color:var(--blue)}.academy-course button,.lesson-actions button{border:0;border-radius:9px;background:var(--blue);color:white;padding:9px 11px;font-weight:700;font-size:12px}.academy-lesson{border:1px solid var(--line);border-radius:13px;padding:16px;background:var(--surface);min-height:260px;position:sticky;top:130px}.lesson-empty{text-align:center;color:var(--muted);padding:35px 10px}.lesson-empty>span{font-size:34px}.lesson-empty h3{color:var(--ink);margin:10px 0}.lesson-content h3{margin:0 0 7px}.lesson-content .lesson-meta{font-size:11px;color:var(--muted);margin-bottom:13px}.lesson-content h4{margin:14px 0 6px}.lesson-content p,.lesson-content li{font-size:13px;line-height:1.6;color:var(--muted)}.lesson-content ul{padding-left:19px}.lesson-quiz{border-top:1px solid var(--line);padding-top:12px;margin-top:14px}.lesson-quiz label{display:block;font-size:12px;margin:8px 0;color:var(--ink)}.lesson-quiz button{margin-top:8px}.lesson-feedback{font-size:12px;padding:9px;border-radius:8px;background:var(--sky);margin-top:9px}.lesson-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.lesson-actions button.secondary{background:var(--sky);color:var(--blue);border:1px solid var(--line)}.academy-bottom{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:16px;padding:14px;border-radius:12px;background:var(--sky)}.academy-bottom p{font-size:12px;color:var(--muted);margin:5px 0 0;line-height:1.5}.academy-bottom strong{font-size:13px}.academy-empty{grid-column:1/-1;text-align:center;padding:24px;color:var(--muted);border:1px dashed var(--line);border-radius:12px}
 @media(max-width:760px){.academy-layout{grid-template-columns:1fr}.academy-lesson{position:static;min-height:180px}.academy-courses{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){.academy-shell{padding:12px}.academy-tools{grid-template-columns:1fr}.academy-welcome{padding:17px}.academy-welcome h3{font-size:19px}.academy-courses{grid-template-columns:1fr}.academy-result-head{align-items:flex-start;flex-direction:column}.academy-stat{min-width:72px;padding:9px}}
 
@@ -32,159 +49,278 @@
 /* G Social improvements */
 .g-profile-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.g-avatar{width:48px;height:48px;flex:0 0 48px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#2457d6,#7655c9);color:white;font-weight:800;font-size:20px}.g-profile-fields{display:grid;gap:5px;flex:1;min-width:170px}.g-profile-fields input,.g-social-search{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink)}.g-notice-count{display:inline-grid;place-items:center;min-width:23px;height:23px;padding:0 6px;border-radius:99px;background:var(--blue);color:white;font-size:12px}.g-notice-list{display:grid;gap:7px}.g-notice{padding:9px 11px;border-radius:10px;background:var(--sky);font-size:13px}.g-social-search{margin:0 0 12px}
 
-</style></head>
+
+/* G Global Opportunities directory */
+.global-opportunities{border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:18px;margin:12px 0 18px}
+.global-opportunities h3{margin:0 0 6px;font-size:19px}
+.global-opportunities .global-intro{color:var(--muted);font-size:13px;line-height:1.55;margin:0 0 14px}
+.global-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.global-controls label{display:flex;flex-direction:column;gap:6px;font-size:12px;font-weight:700;color:var(--muted)}
+.global-controls input,.global-controls select{width:100%;min-width:0;border:1px solid var(--line);border-radius:9px;padding:10px;background:var(--bg);color:var(--ink);font:inherit;font-size:14px}
+.global-resource-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:14px}
+.global-resource{border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--bg)}
+.global-resource strong{font-size:13px;display:block;margin-bottom:5px}
+.global-resource p{font-size:11px;line-height:1.45;color:var(--muted);margin:0 0 9px}
+.global-resource a{font-size:12px;font-weight:700;color:var(--blue);text-decoration:none}
+.global-resource a:hover{text-decoration:underline}
+.global-disclaimer{margin-top:12px;padding:11px;border-radius:10px;background:var(--sky);font-size:12px;line-height:1.5}
+@media(max-width:760px){.global-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.global-resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.global-opportunities{padding:13px}.global-controls,.global-resource-grid{grid-template-columns:1fr}}
+
+
+/* G refreshed identity + simple topic-first navigation */
+:root{--g-blue:#1558d6;--g-red:#d62935;--g-black:#111827}
+.logo{font-size:42px!important;line-height:1;font-weight:950!important;letter-spacing:-4px!important;color:transparent!important;background:linear-gradient(115deg,#0b45bd 0%,#2878f4 48%,#111827 72%,#d62935 100%);-webkit-background-clip:text;background-clip:text;filter:drop-shadow(2px 2px 0 rgba(214,41,53,.18)) drop-shadow(-2px 1px 0 rgba(10,20,40,.22));}
+.top{padding-top:12px;padding-bottom:10px}.tag{letter-spacing:1.2px;font-weight:800;font-size:10px}
+.compact-nav{padding-bottom:10px;gap:7px}.compact-nav a{padding:6px 12px;font-size:12px}
+.hero{margin-top:22px;min-height:180px;background:radial-gradient(circle at 88% 18%,rgba(214,41,53,.38),transparent 28%),linear-gradient(115deg,#101b36 0%,#164bb5 62%,#172033 100%);box-shadow:0 12px 32px rgba(17,35,70,.13)}
+.hero .badge{font-size:54px;filter:drop-shadow(0 0 12px rgba(255,255,255,.22))}
+.explorer-home{margin-top:28px}.explorer-home>.section-title{margin-top:0}.topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.topic-card{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:9px;min-height:150px;padding:20px;text-align:left;border:1px solid var(--line);border-radius:17px;background:var(--surface);color:var(--ink);box-shadow:0 5px 18px rgba(20,35,70,.055);transition:transform .18s,border-color .18s,box-shadow .18s}
+.topic-card:hover,.topic-card:focus-visible{transform:translateY(-3px);border-color:var(--blue);box-shadow:0 10px 25px rgba(20,55,120,.12);outline:3px solid transparent}
+.topic-icon{font-size:30px}.topic-card strong{font-size:17px}.topic-card>span:nth-of-type(2){font-size:13px;line-height:1.45;color:var(--muted);max-width:95%}.topic-arrow{position:absolute;right:17px;bottom:14px;font-size:20px;color:var(--blue)}
+.topic-categories{display:flex;gap:9px;flex-wrap:wrap;padding:13px;margin:8px 0 20px;background:var(--surface);border:1px solid var(--line);border-radius:15px}.topic-categories a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-size:13px;font-weight:750;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:11px;padding:10px 13px;transition:.18s}.topic-categories a:hover,.topic-categories a:focus-visible{background:var(--sky);color:var(--blue);border-color:var(--blue);outline:2px solid transparent;transform:translateY(-1px)}.topic-anchor{scroll-margin-top:22px}.topic-view{margin-top:20px;animation:topicIn .2s ease-out}.topic-view.hidden{display:none!important}.back-explorer{margin:4px 0 16px;border:1px solid var(--line);border-radius:20px;background:var(--surface);color:var(--blue);font-weight:700;padding:9px 14px}.internal-reference{margin:24px 0;padding:12px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:12px}.internal-reference summary{cursor:pointer;font-weight:700}.internal-reference>.section-title{font-size:15px}
+@keyframes topicIn{from{opacity:.5;transform:translateY(5px)}to{opacity:1;transform:none}}
+@media(max-width:760px){.topic-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{margin-top:14px}.top{gap:10px}.tag{font-size:9px}}
+@media(max-width:430px){.topic-grid{grid-template-columns:1fr}.topic-card{min-height:112px;padding:16px}.hero{padding:22px}.hero .badge{font-size:40px}.compact-nav{overflow-x:auto}}
+
+/* G account panel — Supabase Auth */
+.g-auth-panel{max-width:1120px;margin:18px auto 0;padding:0 20px}
+.g-auth-inner{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:center}
+.g-auth-inner h2{font-size:18px;margin:0 0 6px}.g-auth-inner p{font-size:13px;line-height:1.5;color:var(--muted);margin:0}
+.g-auth-form{display:grid;grid-template-columns:1fr 1fr;gap:8px}.g-auth-form input{min-width:0;width:100%;border:1px solid var(--line);border-radius:9px;padding:11px;background:var(--bg);color:var(--ink);font:inherit}.g-auth-actions{display:flex;gap:8px;flex-wrap:wrap;grid-column:1/-1}.g-auth-status{grid-column:1/-1;font-size:12px;line-height:1.45;color:var(--muted);min-height:17px}.g-auth-user{font-size:12px;color:var(--blue);font-weight:700;overflow-wrap:anywhere}
+@media(max-width:650px){.g-auth-inner{grid-template-columns:1fr}.g-auth-form{grid-template-columns:1fr}}
+</style><style>
+
+/* Hide the Google Translate top banner injected into the page */
+html body { top: 0 !important; margin-top: 0 !important; position: static !important; }
+iframe.goog-te-banner-frame,
+iframe.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+body > .skiptranslate {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  max-height: 0 !important;
+  overflow: hidden !important;
+}
+.goog-te-balloon-frame { display: none !important; }
+#goog-gt-tt, .goog-te-balloon-frame { display: none !important; }
+
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
 <body>
-<header><div class="top"><div><div class="logo">G.</div><div class="tag">ONE WORLD. ONE PLATFORM.</div></div><label class="search">🔎 <input id="search" placeholder="Mitadiava olona, asa, vokatra, lesona, toerana…" aria-label="Search"></label><button class="theme-toggle" id="themeToggle" type="button" aria-label="Activate dark mode" aria-pressed="false">🌙 Dark</button><select class="lang" id="lang" aria-label="Language"><option value="mg">🇲🇬 MG</option><option value="fr">🇫🇷 FR</option><option value="en">🇬🇧 EN</option><option value="es">🇪🇸 Español</option><option value="pt">🇧🇷 Português</option><option value="de">🇩🇪 Deutsch</option><option value="it">🇮🇹 Italiano</option><option value="ru">🇷🇺 Русский</option><option value="zh">🇨🇳 中文</option><option value="hi">🇮🇳 हिन्दी</option><option value="ja">🇯🇵 日本語</option><option value="ko">🇰🇷 한국어</option><option value="ar">🇸🇦 العربية</option><option value="tr">🇹🇷 Türkçe</option><option value="id">🇮🇩 Bahasa Indonesia</option></select></div></header>
-<nav class="main-nav" aria-label="Fikarohana lehibe">
+<header><div class="top"><div><div aria-label="Logo G" class="logo" title="G — One World. One Platform.">G</div><div class="tag">ONE WORLD. ONE PLATFORM.</div></div><label class="search">🔎 <input aria-label="Search" id="search" placeholder="Mitadiava olona, asa, vokatra, lesona, toerana…"/></label><button aria-label="Activate dark mode" aria-pressed="false" class="theme-toggle" id="themeToggle" type="button">🌙 Dark</button><select aria-label="Language" class="lang notranslate" id="lang" translate="no"><option value="mg">🇲🇬 MG</option><option value="fr">🇫🇷 FR</option><option value="en">🇬🇧 EN</option><option value="es">🇪🇸 Español</option><option value="pt">🇧🇷 Português</option><option value="de">🇩🇪 Deutsch</option><option value="it">🇮🇹 Italiano</option><option value="ru">🇷🇺 Русский</option><option value="zh">🇨🇳 中文</option><option value="hi">🇮🇳 हिन्दी</option><option value="ja">🇯🇵 日本語</option><option value="ko">🇰🇷 한국어</option><option value="ar">🇸🇦 العربية</option><option value="tr">🇹🇷 Türkçe</option><option value="id">🇮🇩 Bahasa Indonesia</option></select></div><nav aria-label="Menu tsotra" class="main-nav compact-nav"><a href="#homeTop">Accueil</a><a href="#explorer">Explorer</a><a href="#support">Aide</a></nav></header>
+<nav aria-label="Fikarohana lehibe" class="main-nav">
 <a href="#socialWorkspace">👥 Social</a><a href="#marketplace">🛒 Marketplace</a><a href="#jobs">💼 G Jobs</a><a href="#academy">🎓 Academy</a><a href="#travel">✈️ Travel</a><a href="#support">🛠️ Fanampiana</a>
 </nav>
 <main>
-<section class="hero"><div><h1 id="welcome">Tongasoa eto amin'ny G</h1><p id="intro">Sehatra iray mampifandray olona, fahalalana, varotra ary kolontsaina maneran-tany.</p><div class="chips"><span class="chip">🌍 International</span><span class="chip">🤝 Open to everyone</span><span class="chip">🔒 Safety first</span></div></div><div class="badge">🌐</div></section>
-<div class="social-layout" id="socialWorkspace">
- <div>
-  <section class="social-panel" aria-label="Profil G">
-   <h3>👤 Ny mombamomba ahy</h3>
-   <div class="g-profile-row"><div class="g-avatar" id="profileAvatar">G</div><div class="g-profile-fields"><label class="small-muted" for="profileName">Anarana aseho</label><input id="profileName" maxlength="40" value="Mpampiasa G" placeholder="Anaranao"><label class="small-muted" for="profileBio">Bio fohy</label><input id="profileBio" maxlength="100" placeholder="Lazao fohy ny momba anao"></div><button class="g-btn" id="saveProfile" type="button">Tehirizo</button></div>
-   <p class="small-muted" id="profileStatus" aria-live="polite">Aseho amin’ny publication sy commentaires ny anaranao.</p>
-  </section>
-  <section class="social-panel" aria-label="Fampandrenesana G">
-   <h3>🔔 Fampandrenesana <span class="g-notice-count" id="noticeCount">0</span></h3><div id="noticeList" class="g-notice-list"><p class="small-muted">Mbola tsy misy fampandrenesana.</p></div>
-  </section>
-  <section class="social-panel" aria-labelledby="composerTitle">
-   <h3 id="composerTitle">📝 Zarao amin’ny vondrom-piarahamonina</h3>
-   <label class="small-muted" for="postText">Inona no tianao hozaraina?</label>
-   <textarea id="postText" maxlength="1000" placeholder="Manorata vaovao, hevitra na fanontaniana…"></textarea>
-   <div class="social-actions"><select id="postAudience" aria-label="Fahitana ny publication" style="max-width:190px"><option value="Public">🌍 Public</option><option value="Group">👥 Vondrona</option></select><button class="g-btn" id="publishPost" type="button">Publier</button></div>
-   <div class="small-muted" id="postStatus" aria-live="polite" style="margin-top:8px">Santionany eo amin’ity fitaovana ity ihany ny publication.</div>
-  </section>
-  <section class="social-panel" aria-labelledby="feedTitle"><h3 id="feedTitle">📰 Fil d’actualité</h3><input id="socialSearch" type="search" placeholder="🔎 Karohy publication…" aria-label="Karohy publication" class="g-social-search"><div id="postFeed" aria-live="polite"></div></section>
- </div>
- <div>
-  <section class="social-panel"><h3>👥 Vondrom-piarahamonina</h3><div id="groupList"></div><p class="small-muted">Afaka miditra na miala amin’ny vondrona santionany ianao.</p></section>
-  <section class="social-panel"><h3>💬 Messagerie — Démo</h3><label class="small-muted" for="chatContact">Resaka</label><select id="chatContact"><option value="Mira">Mira — Community</option><option value="Kanto">Kanto — G Academy</option><option value="Alex">Alex — Travel</option></select><div class="chat-box" style="margin-top:10px"><div class="chat-head" id="chatHead">Mira</div><div class="chat-messages" id="chatMessages" aria-live="polite"></div><form class="chat-compose" id="chatForm"><input id="chatInput" maxlength="500" placeholder="Manorata hafatra…" aria-label="Hafatra"><button class="g-btn" type="submit">Alefa</button></form></div></section>
- </div>
+<section class="g-auth-panel" aria-labelledby="gAuthTitle"><div class="g-auth-inner">
+<div><h2 id="gAuthTitle">Kaonty G</h2><p id="gAuthIntro">Mamoròna kaonty na midira amin’ny alalan’ny adiresy mailaka. Ity dingana ity dia mampifandray ny fanamarinana kaonty amin’ny Supabase; mbola tsy mampifandray ny publication sy ny hafatra amin’ny database.</p><p class="g-auth-user" id="gAuthUser" aria-live="polite">Tsy mbola tafiditra.</p></div>
+<form class="g-auth-form" id="gAuthForm">
+<input id="gAuthEmail" type="email" autocomplete="email" placeholder="Adiresy mailaka" aria-label="Adiresy mailaka" required>
+<input id="gAuthPassword" type="password" autocomplete="current-password" placeholder="Teny miafina (farafahakeliny 8)" aria-label="Teny miafina" minlength="8" required>
+<div class="g-auth-actions"><button class="g-btn" id="gAuthSignIn" type="button">Hiditra</button><button class="g-btn secondary" id="gAuthSignUp" type="button">Hamorona kaonty</button><button class="g-btn secondary hidden" id="gAuthSignOut" type="button">Hivoaka</button></div>
+<div class="g-auth-status" id="gAuthStatus" role="status" aria-live="polite">Miandry ny fifandraisana amin’ny Supabase…</div>
+</form></div></section><section class="hero" id="homeTop"><div><h1 id="welcome">G — One World. One Platform.</h1><p id="intro">Sehatra iray, safidy maro. Safidio ny lohahevitra mahaliana anao.</p></div><div class="badge">🌍</div></section><section aria-labelledby="explorerTitle" class="explorer-home" id="explorer"><h2 class="section-title" id="explorerTitle">Inona no tianao hatao?</h2><p class="section-lead">Misafidiana sehatra iray. Ao anatiny no ahitanao ny safidy sy ny fanazavana rehetra.</p><div class="topic-grid"><button class="topic-card" data-open-topic="social" type="button"><span aria-hidden="true" class="topic-icon">👥</span><strong>Social Network</strong><span>Mifandray, mizara hevitra ary miresaka.</span><span aria-hidden="true" class="topic-arrow">→</span></button><button class="topic-card" data-open-topic="market" type="button"><span aria-hidden="true" class="topic-icon">🛒</span><strong>Marketplace</strong><span>Mividy, mivarotra ary mitady tolotra.</span><span aria-hidden="true" class="topic-arrow">→</span></button><button class="topic-card" data-open-topic="jobs" type="button"><span aria-hidden="true" class="topic-icon">💼</span><strong>G Jobs</strong><span>Mitady asa na mametraka tolotra asa.</span><span aria-hidden="true" class="topic-arrow">→</span></button><button class="topic-card" data-open-topic="academy" type="button"><span aria-hidden="true" class="topic-icon">🎓</span><strong>G Academy</strong><span>Mianatra sy mizara fahalalana.</span><span aria-hidden="true" class="topic-arrow">→</span></button><button class="topic-card" data-open-topic="travel" type="button"><span aria-hidden="true" class="topic-icon">✈️</span><strong>Travel</strong><span>Mikaro-baovao momba ny dia sy toerana.</span><span aria-hidden="true" class="topic-arrow">→</span></button><button class="topic-card" data-open-topic="support" type="button"><span aria-hidden="true" class="topic-icon">🛠️</span><strong>Services &amp; Support</strong><span>Mitady fanampiana sy tolotra.</span><span aria-hidden="true" class="topic-arrow">→</span></button></div></section><section aria-label="Social Network" class="topic-view hidden" data-topic-view="social"><button class="back-explorer" type="button">← Miverina amin’ny lohahevitra</button><nav class="topic-categories" aria-label="Sokajy Social Network"><a href="#social-profile">👤 Profil</a><a href="#social-create">📝 Publication</a><a href="#social-feed">📰 Actualités</a><a href="#social-groups">👥 Vondrona</a><a href="#social-chat">💬 Hafatra</a><a href="#social-community">🤝 Community</a></nav><div class="social-layout" id="socialWorkspace">
+<div>
+<section aria-label="Profil G" class="social-panel topic-anchor" id="social-profile">
+<h3>👤 Ny mombamomba ahy</h3>
+<div class="g-profile-row"><div class="g-avatar" id="profileAvatar">G</div><div class="g-profile-fields"><label class="small-muted" for="profileName">Anarana aseho</label><input id="profileName" maxlength="40" placeholder="Anaranao" value="Mpampiasa G"/><label class="small-muted" for="profileBio">Bio fohy</label><input id="profileBio" maxlength="100" placeholder="Lazao fohy ny momba anao"/></div><button class="g-btn" id="saveProfile" type="button">Tehirizo</button></div>
+<p aria-live="polite" class="small-muted" id="profileStatus">Aseho amin’ny publication sy commentaires ny anaranao.</p>
+</section>
+<section aria-label="Fampandrenesana G" class="social-panel">
+<h3>🔔 Fampandrenesana <span class="g-notice-count" id="noticeCount">0</span></h3><div class="g-notice-list" id="noticeList"><p class="small-muted">Mbola tsy misy fampandrenesana.</p></div>
+</section>
+<section aria-labelledby="composerTitle" class="social-panel topic-anchor" id="social-create">
+<h3 id="composerTitle">📝 Zarao amin’ny vondrom-piarahamonina</h3>
+<label class="small-muted" for="postText">Inona no tianao hozaraina?</label>
+<textarea id="postText" maxlength="1000" placeholder="Manorata vaovao, hevitra na fanontaniana…"></textarea>
+<div class="social-actions"><select aria-label="Fahitana ny publication" id="postAudience" style="max-width:190px"><option value="Public">🌍 Public</option><option value="Group">👥 Vondrona</option></select><button class="g-btn" id="publishPost" type="button">Publier</button></div>
+<div aria-live="polite" class="small-muted" id="postStatus" style="margin-top:8px">Santionany eo amin’ity fitaovana ity ihany ny publication.</div>
+</section>
+<section aria-labelledby="feedTitle" class="social-panel topic-anchor" id="social-feed"><h3 id="feedTitle">📰 Fil d’actualité</h3><input aria-label="Karohy publication" class="g-social-search" id="socialSearch" placeholder="🔎 Karohy publication…" type="search"/><div aria-live="polite" id="postFeed"></div></section>
 </div>
-<div class="social-note">🔒 <strong>Fanamarihana momba ny demo:</strong> voatahiry ao amin’ity navigateur ity ihany ny profil, publication, commentaires, réactions, fampandrenesana, fidirana vondrona ary hafatra (localStorage). Tsy mbola mifandray amin’ny mpampiasa hafa na serveur ny G. Mila backend, kaonty, fanamarinana ary fiarovana fanampiny vao tena tambajotra sosialy mivantana.</div>
-<h2 class="section-title" id="socialTitle">👥 Tambajotra sosialy</h2><section class="grid" id="social"><article class="card"><div class="icon">❤️</div><h3>Rencontre</h3><p>Fifankahalalana sy fifandraisana am-panajana.</p></article><article class="card"><div class="icon">🤝</div><h3>Namana</h3><p>Mitadiava namana sy vondrom-piarahamonina.</p></article><article class="card"><div class="icon">💼</div><h3>Business & Networking</h3><p>Mpandraharaha, mpiara-miombon'antoka ary mpanjifa.</p></article><article class="card"><div class="icon">💬</div><h3>Discussion</h3><p>Fifanakalozan-kevitra sy vondrona.</p></article></section>
-<h2 class="section-title" id="marketplace">🛒 G Marketplace — Tsena manerantany</h2>
-<p class="section-lead">Sehatra iray ahafahan’ny olona sy ny orinasa mividy, mivarotra vokatra na manolotra tolotra. Afaka mikaroka eo an-toerana na maneran-tany.</p>
-<section class="market-shell">
- <div class="market-welcome"><div><span class="academy-kicker">BUY · SELL · CONNECT</span><h3>Ny tsena iray mampifandray izao tontolo izao. 🌍</h3><p>Vokatra, asa-tanana, fitaovana, trano, sakafo ary tolotra isan-karazany.</p></div><div class="academy-stat"><strong id="marketCount">0</strong><span>doka hita</span></div></div>
- <div class="market-controls"><label>🔎 <input id="marketSearch" type="search" placeholder="Mitadiava vokatra, tolotra na mpivarotra…" aria-label="Fikarohana Marketplace"></label><select id="marketCategory" aria-label="Sokajy"><option value="all">Sokajy rehetra</option><option>Teknolojia</option><option>Trano sy tany</option><option>Fitafiana</option><option>Fitaovam-panorenana</option><option>Fambolena</option><option>Sakafo</option><option>Asa-tanana</option><option>Serivisy</option><option>Fiara</option></select><input id="marketLocation" type="search" placeholder="Firenena / tanàna" aria-label="Toerana"><select id="marketSort" aria-label="Fandaminana"><option value="new">Vaovao indrindra</option><option value="low">Vidiny ambany</option><option value="high">Vidiny ambony</option></select></div>
- <div class="market-actions"><button class="primary-btn" id="showSellerForm" type="button">＋ Mametraka doka</button><span class="demo-tag">DÉMO LOCALE</span></div>
- <form id="sellerForm" class="market-form hidden"><h3>📦 Mamorona doka vaovao</h3><div class="form-two"><label>Anaran’ny vokatra / tolotra<input id="marketTitle" maxlength="100" required placeholder="Ohatra: Seza hazo vita tanana"></label><label>Sokajy<select id="marketNewCategory" required><option value="Teknolojia">Teknolojia</option><option value="Trano sy tany">Trano sy tany</option><option value="Fitafiana">Fitafiana</option><option value="Fitaovam-panorenana">Fitaovam-panorenana</option><option value="Fambolena">Fambolena</option><option value="Sakafo">Sakafo</option><option value="Asa-tanana">Asa-tanana</option><option value="Serivisy">Serivisy</option><option value="Fiara">Fiara</option></select></label><label>Vidiny sy vola ampiasaina<input id="marketPrice" maxlength="50" required placeholder="Ohatra: 120 000 Ar"></label><label>Toerana<input id="marketPlace" maxlength="80" required placeholder="Tanàna, firenena"></label></div><label>Famaritana<textarea id="marketDescription" maxlength="700" rows="3" required placeholder="Hazavao ny toetra, ny fepetra ary ny antsipiriany…"></textarea></label><div class="form-two"><label>Anaran’ny mpivarotra<input id="marketSeller" maxlength="70" required placeholder="Anarana na anaran’orinasa"></label><label>Fifandraisana<input id="marketContact" maxlength="120" required placeholder="Email na rohy ofisialy"></label></div><label class="check-line"><input id="marketConfirm" type="checkbox" required> Manamarina aho fa marina ny vaovao ary manana zo hivarotra na hanolotra ity tolotra ity.</label><div class="social-actions"><button class="primary-btn" type="submit">Asehoy ao amin’ny lisitra</button><button class="secondary-btn" id="cancelSellerForm" type="button">Ajanona</button></div><p class="small-note">Aza mampiditra tenimiafina, laharana miafina, na antontan-kevitra manokana tsy ilaina.</p></form>
- <div class="market-result"><strong id="marketResultCount">Doka atolotra</strong><span class="small-muted">Tsindrio ny ⭐ raha te hitahiry doka tianao.</span></div><div id="marketListings" class="market-listings" aria-live="polite"></div>
- <div class="market-safety"><h3>🛡️ Fiarovana ny mpividy sy mpivarotra</h3><div class="safety-grid"><div class="safety-card"><strong>✓ Hamarino ny mpivarotra</strong><p>Jereo ny mombamomba ny orinasa, ny tantara ary ny hevitra alohan’ny handoavana.</p></div><div class="safety-card"><strong>✓ Mitandrema amin’ny fandoavana</strong><p>Aza mandefa vola mialoha amin’olona tsy voamarina. Mampiasà fomba fandoavana azo antoka.</p></div><div class="safety-card"><strong>✓ Doka marina</strong><p>Tokony ho mazava ny vidiny, ny toerana, ny toetra ary ny fepetra.</p></div><div class="safety-card"><strong>✓ Tatitra raha misy olana</strong><p>Ampahafantaro ny tompon’andraikitra rehefa misy hosoka na doka mampiahiahy.</p></div></div><form id="marketReportForm" class="market-report"><label>Antony anaovana tatitra<input id="marketReportText" maxlength="300" required placeholder="Lazao fohy ny olana hita…"></label><button class="secondary-btn" type="submit">🚩 Mandefa tatitra santionany</button><div id="marketReportNotice" class="inline-notice hidden" role="status"></div></form></div>
- <p class="small-note">Fanamarihana: santionany eo amin’ity navigateur ity ihany ny Marketplace. Tsy mbola misy kaonty mpivarotra, fandoavam-bola, fandefasana entana na fifandraisana tena izy amin’ny serveur.</p>
-</section>
-<h2 class="section-title" id="jobs">💼 G Jobs — Asa iraisam-pirenena</h2>
-<p class="section-lead">Mitadiava asa araka ny fahaiza-manao, na manana diplôme ianao na tsia. Afaka mametraka tolotra sy mitady mpiasa koa ny orinasa sy ny mpampiasa.</p>
-<div class="job-tabs" role="tablist" aria-label="Safidy G Jobs">
-  <button class="job-tab active" type="button" role="tab" aria-selected="true" data-job-view="seek">🔎 Mitady asa</button>
-  <button class="job-tab" type="button" role="tab" aria-selected="false" data-job-view="hire">🏢 Mitady mpiasa / Mametraka asa</button>
-  <button class="job-tab" type="button" role="tab" aria-selected="false" data-job-view="safety">🛡️ Fiarovana</button>
+<div>
+<section class="social-panel topic-anchor" id="social-groups"><h3>👥 Vondrom-piarahamonina</h3><div id="groupList"></div><p class="small-muted">Afaka miditra na miala amin’ny vondrona santionany ianao.</p></section>
+<section class="social-panel topic-anchor" id="social-chat"><h3>💬 Messagerie — Démo</h3><label class="small-muted" for="chatContact">Resaka</label><select id="chatContact"><option value="Mira">Mira — Community</option><option value="Kanto">Kanto — G Academy</option><option value="Alex">Alex — Travel</option></select><div class="chat-box" style="margin-top:10px"><div class="chat-head" id="chatHead">Mira</div><div aria-live="polite" class="chat-messages" id="chatMessages"></div><form class="chat-compose" id="chatForm"><input aria-label="Hafatra" id="chatInput" maxlength="500" placeholder="Manorata hafatra…"/><button class="g-btn" type="submit">Alefa</button></form></div></section>
 </div>
-<section class="job-panel" id="jobSeekPanel" data-job-panel="seek">
-  <div class="job-panel-head"><div><h3>Mitadiava asa maneran-tany</h3><p>Asa eto an-toerana, any ivelany ary remote. Ny ohatra aseho eto dia santionany fotsiny fa tsy tolotra tena misy.</p></div><span class="demo-tag">OHATRA DEMO</span></div>
-  <form id="jobSearchForm" class="job-filters">
-    <label>Teny na fahaiza-manao<input id="jobKeyword" type="search" placeholder="Ohatra: maçon, anglais, informatique"></label>
-    <label>Firenena / toerana<input id="jobLocation" type="search" placeholder="Ohatra: Madagascar, Canada, Remote"></label>
-    <label>Diplaoma<select id="jobQualification"><option value="all">Tsy manavaka</option><option value="none">Tsy mila diplôme</option><option value="required">Mitaky diplôme</option></select></label>
-    <label>Fomba fiasana<select id="jobMode"><option value="all">Rehetra</option><option value="remote">Remote</option><option value="onsite">En présentiel</option><option value="hybrid">Hybride</option></select></label>
-    <label>Karazana asa<select id="jobType"><option value="all">Rehetra</option><option value="full-time">Temps plein</option><option value="part-time">Temps partiel</option><option value="contract">Contrat / Mission</option><option value="internship">Stage / Apprentissage</option></select></label>
-    <label>Fandaminana<select id="jobSort"><option value="recent">Vaovao aloha</option><option value="title">Anaran’asa A–Z</option><option value="remote">Remote aloha</option></select></label>
-    <div class="filter-actions"><button class="primary-btn" type="submit">🔎 Karohy</button><button class="secondary-btn" id="resetJobFilters" type="button">Avereno</button></div>
-  </form>
-  <div class="results-line"><strong id="jobResultCount" aria-live="polite">5 santionany</strong><span>— Tsy mbola mifandray amin’ny tahiry tena izy.</span></div>
-  <div class="saved-jobs-bar"><strong>⭐ Asa voatahiry: <span id="savedJobCount">0</span></strong><button class="secondary-btn" type="button" id="showSavedJobs">Asehoy ny voatahiry</button><span class="small-note">Voatahiry eto amin’ity navigateur ity ihany.</span></div>
-  <div id="jobListings" class="job-listings" aria-live="polite"></div>
-  <div id="applicationBox" class="application-box hidden">
-    <div class="job-panel-head"><div><h3 id="applicationTitle">Fangatahana asa</h3><p>Fenoy ny santionany raha te hijery ny fizotry ny fangatahana.</p></div><button type="button" class="icon-btn" id="closeApplication" aria-label="Akatona">✕</button></div>
-    <form id="applicationForm" class="job-form">
-      <label>Anarana aseho<input id="appName" required maxlength="80" placeholder="Anarana"></label>
-      <label>Fahaiza-manao sy traikefa<textarea id="appSkills" required maxlength="700" rows="3" placeholder="Lazao fohy ny fahaiza-manao sy ny traikefa"></textarea></label>
-      <label>Rohy CV na portfolio (raha misy)<input id="appPortfolio" type="url" placeholder="https://..."></label>
-      <button class="primary-btn" type="submit">Hamorona fangatahana santionany</button>
-    </form>
-    <p class="small-note">Tsy alefa amin’ny mpampiasa ity fangatahana ity. Demo eo amin’ny navigateur ihany izy satria mbola tsy misy serveur na kaonty.</p>
-    <div id="applicationNotice" class="inline-notice hidden" role="status"></div>
-  </div>
+</div><div class="social-note">🔒 <strong>Fanamarihana momba ny demo:</strong> voatahiry ao amin’ity navigateur ity ihany ny profil, publication, commentaires, réactions, fampandrenesana, fidirana vondrona ary hafatra (localStorage). Tsy mbola mifandray amin’ny mpampiasa hafa na serveur ny G. Mila backend, kaonty, fanamarinana ary fiarovana fanampiny vao tena tambajotra sosialy mivantana.</div><h2 class="section-title" id="socialTitle">👥 Tambajotra sosialy</h2><section class="grid topic-anchor" id="social-community"><article class="card"><div class="icon">❤️</div><h3>Rencontre</h3><p>Fifankahalalana sy fifandraisana am-panajana.</p></article><article class="card"><div class="icon">🤝</div><h3>Namana</h3><p>Mitadiava namana sy vondrom-piarahamonina.</p></article><article class="card"><div class="icon">💼</div><h3>Business &amp; Networking</h3><p>Mpandraharaha, mpiara-miombon'antoka ary mpanjifa.</p></article><article class="card"><div class="icon">💬</div><h3>Discussion</h3><p>Fifanakalozan-kevitra sy vondrona.</p></article></section></section><section aria-label="Marketplace" class="topic-view hidden" data-topic-view="market"><button class="back-explorer" type="button">← Miverina amin’ny lohahevitra</button><nav class="topic-categories" aria-label="Sokajy Marketplace"><a href="#market-products">🛍️ Vokatra sy tolotra</a><a href="#market-categories">🗂️ Sokajy</a><a href="#market-sell">＋ Mametraka doka</a><a href="#market-safety">🛡️ Fiarovana</a></nav><h2 class="section-title" id="marketplace">🛒 G Marketplace — Tsena manerantany</h2><p class="section-lead">Sehatra iray ahafahan’ny olona sy ny orinasa mividy, mivarotra vokatra na manolotra tolotra. Afaka mikaroka eo an-toerana na maneran-tany.</p><section class="market-shell">
+<div class="market-welcome"><div><span class="academy-kicker">BUY · SELL · CONNECT</span><h3>Ny tsena iray mampifandray izao tontolo izao. 🌍</h3><p>Vokatra, asa-tanana, fitaovana, trano, sakafo ary tolotra isan-karazany.</p></div><div class="academy-stat"><strong id="marketCount">0</strong><span>doka hita</span></div></div>
+<div class="market-controls topic-anchor" id="market-categories"><label>🔎 <input aria-label="Fikarohana Marketplace" id="marketSearch" placeholder="Mitadiava vokatra, tolotra na mpivarotra…" type="search"/></label><select aria-label="Sokajy" id="marketCategory"><option value="all">Sokajy rehetra</option><option>Teknolojia</option><option>Trano sy tany</option><option>Fitafiana</option><option>Fitaovam-panorenana</option><option>Fambolena</option><option>Sakafo</option><option>Asa-tanana</option><option>Serivisy</option><option>Fiara</option></select><input aria-label="Toerana" id="marketLocation" placeholder="Firenena / tanàna" type="search"/><select aria-label="Fandaminana" id="marketSort"><option value="new">Vaovao indrindra</option><option value="low">Vidiny ambany</option><option value="high">Vidiny ambony</option></select></div>
+<div class="market-actions topic-anchor" id="market-sell"><button class="primary-btn" id="showSellerForm" type="button">＋ Mametraka doka</button><span class="demo-tag">DÉMO LOCALE</span></div>
+<form class="market-form hidden" id="sellerForm"><h3>📦 Mamorona doka vaovao</h3><div class="form-two"><label>Anaran’ny vokatra / tolotra<input id="marketTitle" maxlength="100" placeholder="Ohatra: Seza hazo vita tanana" required=""/></label><label>Sokajy<select id="marketNewCategory" required=""><option value="Teknolojia">Teknolojia</option><option value="Trano sy tany">Trano sy tany</option><option value="Fitafiana">Fitafiana</option><option value="Fitaovam-panorenana">Fitaovam-panorenana</option><option value="Fambolena">Fambolena</option><option value="Sakafo">Sakafo</option><option value="Asa-tanana">Asa-tanana</option><option value="Serivisy">Serivisy</option><option value="Fiara">Fiara</option></select></label><label>Vidiny sy vola ampiasaina<input id="marketPrice" maxlength="50" placeholder="Ohatra: 120 000 Ar" required=""/></label><label>Toerana<input id="marketPlace" maxlength="80" placeholder="Tanàna, firenena" required=""/></label></div><label>Famaritana<textarea id="marketDescription" maxlength="700" placeholder="Hazavao ny toetra, ny fepetra ary ny antsipiriany…" required="" rows="3"></textarea></label><div class="form-two"><label>Anaran’ny mpivarotra<input id="marketSeller" maxlength="70" placeholder="Anarana na anaran’orinasa" required=""/></label><label>Fifandraisana<input id="marketContact" maxlength="120" placeholder="Email na rohy ofisialy" required=""/></label></div><label class="check-line"><input id="marketConfirm" required="" type="checkbox"/> Manamarina aho fa marina ny vaovao ary manana zo hivarotra na hanolotra ity tolotra ity.</label><div class="social-actions"><button class="primary-btn" type="submit">Asehoy ao amin’ny lisitra</button><button class="secondary-btn" id="cancelSellerForm" type="button">Ajanona</button></div><p class="small-note">Aza mampiditra tenimiafina, laharana miafina, na antontan-kevitra manokana tsy ilaina.</p></form>
+<div class="market-result topic-anchor" id="market-products"><strong id="marketResultCount">Doka atolotra</strong><span class="small-muted">Tsindrio ny ⭐ raha te hitahiry doka tianao.</span></div><div aria-live="polite" class="market-listings" id="marketListings"></div>
+<div class="market-safety topic-anchor" id="market-safety"><h3>🛡️ Fiarovana ny mpividy sy mpivarotra</h3><div class="safety-grid"><div class="safety-card"><strong>✓ Hamarino ny mpivarotra</strong><p>Jereo ny mombamomba ny orinasa, ny tantara ary ny hevitra alohan’ny handoavana.</p></div><div class="safety-card"><strong>✓ Mitandrema amin’ny fandoavana</strong><p>Aza mandefa vola mialoha amin’olona tsy voamarina. Mampiasà fomba fandoavana azo antoka.</p></div><div class="safety-card"><strong>✓ Doka marina</strong><p>Tokony ho mazava ny vidiny, ny toerana, ny toetra ary ny fepetra.</p></div><div class="safety-card"><strong>✓ Tatitra raha misy olana</strong><p>Ampahafantaro ny tompon’andraikitra rehefa misy hosoka na doka mampiahiahy.</p></div></div><form class="market-report" id="marketReportForm"><label>Antony anaovana tatitra<input id="marketReportText" maxlength="300" placeholder="Lazao fohy ny olana hita…" required=""/></label><button class="secondary-btn" type="submit">🚩 Mandefa tatitra santionany</button><div class="inline-notice hidden" id="marketReportNotice" role="status"></div></form></div>
+<p class="small-note">Fanamarihana: santionany eo amin’ity navigateur ity ihany ny Marketplace. Tsy mbola misy kaonty mpivarotra, fandoavam-bola, fandefasana entana na fifandraisana tena izy amin’ny serveur.</p>
+</section></section><section aria-label="G Jobs" class="topic-view hidden" data-topic-view="jobs"><button class="back-explorer" type="button">← Miverina amin’ny lohahevitra</button><nav class="topic-categories" aria-label="Sokajy G Jobs"><a href="#globalOppTitle">🌍 Asa iraisam-pirenena</a><a href="#jobSeekPanel">🔎 Mitady asa</a><a href="#jobHirePanel">🏢 Mpampiasa</a><a href="#jobSafetyPanel">🛡️ Fiarovana</a></nav><h2 class="section-title" id="jobs">💼 G Jobs — Asa iraisam-pirenena</h2><section aria-labelledby="globalOppTitle" class="global-opportunities">
+<h3 id="globalOppTitle">🌍 G Global Opportunities — Firenena rehetra</h3>
+<p class="global-intro">Mitadiava asa, stage, fiofanana ary fahafahana ho an’ny mpianatra na mpiasa, na aiza na aiza misy anao. Safidio ny firenena sy ny karazana fahafahana.</p>
+<p class="global-intro"><strong>Loharano fanombohana mihoatra ny 20</strong> no voaangona eto: asa ankapobeny, asa lavitra, ONG, sehatra iraisam-pirenena, stage, fikarohana ary vatsim-pianarana. Hamarino hatrany ny fepetra sy ny daty farany ao amin’ny tranonkala niaviany.</p>
+<div class="global-controls">
+<label for="globalCountry">Firenena haleha
+      <input id="globalCountry" list="globalCountryList" placeholder="Soraty na fidio ny firenena…"/>
+<datalist id="globalCountryList"></datalist>
+</label>
+<label for="globalOpportunityType">Karazana fahafahana
+      <select id="globalOpportunityType">
+<option value="jobs">Asa (na misy diplaoma na tsia)</option>
+<option value="internships">Stage / Apprenticeship</option>
+<option value="students">Asa ho an’ny mpianatra sy vao nahazo diplaoma</option>
+<option value="remote">Asa lavitra (Remote)</option>
+<option value="volunteer">Volontariat / ONG</option>
+<option value="research">Fikarohana / Oniversite</option>
+</select>
+</label>
+<label for="globalKeywords">Asa na fahaiza-manao
+      <input id="globalKeywords" placeholder="Ohatra: construction, informatique…" type="search"/>
+</label>
+</div>
+<div class="filter-actions" style="margin-top:12px">
+<button class="primary-btn" id="globalSearchBtn" type="button">🔎 Karohy amin’ny loharano iraisam-pirenena</button>
+<button class="secondary-btn" id="globalClearBtn" type="button">Fafao</button>
+</div>
+<div class="global-resource-grid">
+<article class="global-resource"><strong>Indeed Worldwide</strong><p>Mitady tolotr’asa amin’ny firenena maro sy sehatra samihafa.</p><a href="https://www.indeed.com/worldwide" rel="noopener noreferrer" target="_blank">Hijery Indeed ↗</a></article>
+<article class="global-resource"><strong>LinkedIn Jobs</strong><p>Asa sy fifandraisana amin’ny mpampiasa maneran-tany.</p><a href="https://www.linkedin.com/jobs/" rel="noopener noreferrer" target="_blank">Hijery LinkedIn Jobs ↗</a></article>
+<article class="global-resource"><strong>UN Careers</strong><p>Fahafahana amin’ny rafitra sy sampan-draharahan’ny Firenena Mikambana.</p><a href="https://careers.un.org/" rel="noopener noreferrer" target="_blank">Hijery UN Careers ↗</a></article>
+<article class="global-resource"><strong>EURES</strong><p>Asa sy fivezivezena arak’asa ao amin’ny firenena eoropeana mandray anjara.</p><a href="https://eures.europa.eu/" rel="noopener noreferrer" target="_blank">Hijery EURES ↗</a></article>
+<article class="global-resource"><strong>IAESTE</strong><p>Fahafahana internship iraisam-pirenena, indrindra ho an’ny mpianatra.</p><a href="https://iaeste.org/" rel="noopener noreferrer" target="_blank">Hijery IAESTE ↗</a></article>
+<article class="global-resource"><strong>ReliefWeb</strong><p>Asa sy fahafahana amin’ny sehatra maha-olona sy ONG.</p><a href="https://reliefweb.int/jobs" rel="noopener noreferrer" target="_blank">Hijery ReliefWeb Jobs ↗</a></article>
+<article class="global-resource"><strong>World Bank Careers</strong><p>Asa, consulting ary fahafahana ho an’ny tanora matihanina.</p><a href="https://www.worldbank.org/en/about/careers" rel="noopener noreferrer" target="_blank">Hijery World Bank ↗</a></article>
+<article class="global-resource"><strong>UNICEF Careers</strong><p>Asa sy internship amin’ny sehatry ny ankizy sy ny fampandrosoana.</p><a href="https://www.unicef.org/careers/" rel="noopener noreferrer" target="_blank">Hijery UNICEF ↗</a></article>
+<article class="global-resource"><strong>WHO Careers</strong><p>Asa iraisam-pirenena amin’ny fahasalamam-bahoaka.</p><a href="https://www.who.int/careers" rel="noopener noreferrer" target="_blank">Hijery WHO ↗</a></article>
+<article class="global-resource"><strong>UNDP Jobs</strong><p>Asa sy consultant amin’ny fampandrosoana maharitra.</p><a href="https://jobs.undp.org/" rel="noopener noreferrer" target="_blank">Hijery UNDP ↗</a></article>
+<article class="global-resource"><strong>UN Volunteers</strong><p>Fahafahana manao volontariat eny an-toerana na amin’ny Internet.</p><a href="https://www.unv.org/" rel="noopener noreferrer" target="_blank">Hijery UN Volunteers ↗</a></article>
+<article class="global-resource"><strong>Devex Jobs</strong><p>Asa amin’ny fampandrosoana, ONG ary sehatra maha-olona.</p><a href="https://www.devex.com/jobs" rel="noopener noreferrer" target="_blank">Hijery Devex ↗</a></article>
+<article class="global-resource"><strong>Impactpool</strong><p>Asa amin’ny ONU, ONG ary fikambanana iraisam-pirenena.</p><a href="https://www.impactpool.org/" rel="noopener noreferrer" target="_blank">Hijery Impactpool ↗</a></article>
+<article class="global-resource"><strong>Idealist</strong><p>Asa, internship ary volontariat amin’ny fikambanana sosialy.</p><a href="https://www.idealist.org/" rel="noopener noreferrer" target="_blank">Hijery Idealist ↗</a></article>
+<article class="global-resource"><strong>Wellfound</strong><p>Asa amin’ny startup sy orinasa teknolojia, anisan’izany ny remote.</p><a href="https://wellfound.com/jobs" rel="noopener noreferrer" target="_blank">Hijery Wellfound ↗</a></article>
+<article class="global-resource"><strong>Remote OK</strong><p>Fikarohana asa lavitra amin’ny sehatra maro.</p><a href="https://remoteok.com/" rel="noopener noreferrer" target="_blank">Hijery Remote OK ↗</a></article>
+<article class="global-resource"><strong>Upwork</strong><p>Tetikasa freelance toy ny fandikan-teny, famolavolana ary informatika.</p><a href="https://www.upwork.com/" rel="noopener noreferrer" target="_blank">Hijery Upwork ↗</a></article>
+<article class="global-resource"><strong>IAESTE</strong><p>Stage iraisam-pirenena ho an’ny mpianatra, indrindra amin’ny siansa sy teknika.</p><a href="https://iaeste.org/" rel="noopener noreferrer" target="_blank">Hijery IAESTE ↗</a></article>
+<article class="global-resource"><strong>Euraxess</strong><p>Asa, fikarohana ary mobilité ho an’ny mpikaroka.</p><a href="https://euraxess.ec.europa.eu/jobs" rel="noopener noreferrer" target="_blank">Hijery Euraxess ↗</a></article>
+<article class="global-resource"><strong>Academic Positions</strong><p>Asa eny amin’ny oniversite sy fikarohana amin’ny firenena maro.</p><a href="https://academicpositions.com/" rel="noopener noreferrer" target="_blank">Hijery Academic Positions ↗</a></article>
+<article class="global-resource"><strong>Studyportals</strong><p>Fikarohana fandaharam-pianarana sy oniversite any ivelany.</p><a href="https://www.studyportals.com/" rel="noopener noreferrer" target="_blank">Hijery Studyportals ↗</a></article>
+<article class="global-resource"><strong>Scholarship Portal</strong><p>Fikarohana vatsim-pianarana sy fanampiana amin’ny fianarana.</p><a href="https://www.scholarshipportal.com/" rel="noopener noreferrer" target="_blank">Hijery Scholarship Portal ↗</a></article>
+<article class="global-resource"><strong>GoAbroad</strong><p>Fahafahana amin’ny fianarana, internship ary volontariat any ivelany.</p><a href="https://www.goabroad.com/" rel="noopener noreferrer" target="_blank">Hijery GoAbroad ↗</a></article>
+<article class="global-resource"><strong>Bayt</strong><p>Sehatra fitadiavana asa any Moyen-Orient sy faritra manodidina.</p><a href="https://www.bayt.com/" rel="noopener noreferrer" target="_blank">Hijery Bayt ↗</a></article>
+<article class="global-resource"><strong>MyJobMag</strong><p>Asa sy stage amin’ny firenena maro aty Afrika.</p><a href="https://www.myjobmag.com/" rel="noopener noreferrer" target="_blank">Hijery MyJobMag ↗</a></article>
+<article class="global-resource"><strong>Job Bank Canada</strong><p>Sehatra ofisialy kanadiana momba ny asa sy ny tsenan’asa.</p><a href="https://www.jobbank.gc.ca/" rel="noopener noreferrer" target="_blank">Hijery Job Bank Canada ↗</a></article>
+</div>
+<div class="global-disclaimer"><strong>Fiarovana:</strong> Ireo dia rohy mankany amin’ny sehatra ivelany, fa tsy tolotra efa nohamarinin’ny G. Hamarino ny mpampiasa, ny fepetra visa sy fahazoan-dalana hiasa, ary aza mandoa vola mialoha noho ny fampanantenana asa.</div>
+</section><p class="section-lead">Mitadiava asa araka ny fahaiza-manao, na manana diplôme ianao na tsia. Afaka mametraka tolotra sy mitady mpiasa koa ny orinasa sy ny mpampiasa.</p><div aria-label="Safidy G Jobs" class="job-tabs" role="tablist">
+<button aria-selected="true" class="job-tab active" data-job-view="seek" role="tab" type="button">🔎 Mitady asa</button>
+<button aria-selected="false" class="job-tab" data-job-view="hire" role="tab" type="button">🏢 Mitady mpiasa / Mametraka asa</button>
+<button aria-selected="false" class="job-tab" data-job-view="safety" role="tab" type="button">🛡️ Fiarovana</button>
+</div><section class="job-panel" data-job-panel="seek" id="jobSeekPanel">
+<div class="job-panel-head"><div><h3>Mitadiava asa maneran-tany</h3><p>Asa eto an-toerana, any ivelany ary remote. Ny ohatra aseho eto dia santionany fotsiny fa tsy tolotra tena misy.</p></div><span class="demo-tag">OHATRA DEMO</span></div>
+<form class="job-filters" id="jobSearchForm">
+<label>Teny na fahaiza-manao<input id="jobKeyword" placeholder="Ohatra: maçon, anglais, informatique" type="search"/></label>
+<label>Firenena / toerana<input id="jobLocation" placeholder="Ohatra: Madagascar, Canada, Remote" type="search"/></label>
+<label>Diplaoma<select id="jobQualification"><option value="all">Tsy manavaka</option><option value="none">Tsy mila diplôme</option><option value="required">Mitaky diplôme</option></select></label>
+<label>Fomba fiasana<select id="jobMode"><option value="all">Rehetra</option><option value="remote">Remote</option><option value="onsite">En présentiel</option><option value="hybrid">Hybride</option></select></label>
+<label>Karazana asa<select id="jobType"><option value="all">Rehetra</option><option value="full-time">Temps plein</option><option value="part-time">Temps partiel</option><option value="contract">Contrat / Mission</option><option value="internship">Stage / Apprentissage</option></select></label>
+<label>Fandaminana<select id="jobSort"><option value="recent">Vaovao aloha</option><option value="title">Anaran’asa A–Z</option><option value="remote">Remote aloha</option></select></label>
+<div class="filter-actions"><button class="primary-btn" type="submit">🔎 Karohy</button><button class="secondary-btn" id="resetJobFilters" type="button">Avereno</button></div>
+</form>
+<div class="results-line"><strong aria-live="polite" id="jobResultCount">5 santionany</strong><span>— Tsy mbola mifandray amin’ny tahiry tena izy.</span></div>
+<div class="saved-jobs-bar"><strong>⭐ Asa voatahiry: <span id="savedJobCount">0</span></strong><button class="secondary-btn" id="showSavedJobs" type="button">Asehoy ny voatahiry</button><span class="small-note">Voatahiry eto amin’ity navigateur ity ihany.</span></div>
+<div aria-live="polite" class="job-listings" id="jobListings"></div>
+<div class="application-box hidden" id="applicationBox">
+<div class="job-panel-head"><div><h3 id="applicationTitle">Fangatahana asa</h3><p>Fenoy ny santionany raha te hijery ny fizotry ny fangatahana.</p></div><button aria-label="Akatona" class="icon-btn" id="closeApplication" type="button">✕</button></div>
+<form class="job-form" id="applicationForm">
+<label>Anarana aseho<input id="appName" maxlength="80" placeholder="Anarana" required=""/></label>
+<label>Fahaiza-manao sy traikefa<textarea id="appSkills" maxlength="700" placeholder="Lazao fohy ny fahaiza-manao sy ny traikefa" required="" rows="3"></textarea></label>
+<label>Rohy CV na portfolio (raha misy)<input id="appPortfolio" placeholder="https://..." type="url"/></label>
+<button class="primary-btn" type="submit">Hamorona fangatahana santionany</button>
+</form>
+<p class="small-note">Tsy alefa amin’ny mpampiasa ity fangatahana ity. Demo eo amin’ny navigateur ihany izy satria mbola tsy misy serveur na kaonty.</p>
+<div class="inline-notice hidden" id="applicationNotice" role="status"></div>
+</div>
+</section><section class="job-panel hidden" data-job-panel="hire" id="jobHirePanel">
+<div class="job-panel-head"><div><h3>Ho an’ny orinasa sy mpanome tolotra asa</h3><p>Manomàna pejin’orinasa, mametraha tolotra mazava, ary tadiavo araka ny fahaiza-manao ny olona mety.</p></div><span class="demo-tag">FAMPISEHOANA</span></div>
+<div class="employer-grid">
+<div class="subpanel"><h4>📣 Mametraha tolotra asa</h4>
+<form class="job-form" id="postJobForm">
+<label>Anaran’ny asa<input id="postTitle" maxlength="100" placeholder="Ohatra: Technicien bâtiment" required=""/></label>
+<div class="form-two"><label>Orinasa / mpampiasa<input id="postCompany" maxlength="100" placeholder="Anaran’ny orinasa" required=""/></label><label>Firenena na toerana<input id="postCountry" maxlength="80" placeholder="Firenena / tanàna" required=""/></label></div>
+<div class="form-two"><label>Diplaoma<select id="postQualification"><option value="none">Tsy takiana</option><option value="required">Takiana</option><option value="preferred">Tombony fa tsy voatery</option></select></label><label>Fomba fiasana<select id="postMode"><option value="onsite">En présentiel</option><option value="remote">Remote</option><option value="hybrid">Hybride</option></select></label></div>
+<div class="form-two"><label>Taona farany ambany<select id="postAge"><option value="Araka ny lalàna eo an-toerana">Araka ny lalàna eo an-toerana</option><option value="18+">18 taona no ho miakatra</option></select></label><label>Karazana asa<select id="postType"><option value="full-time">Temps plein</option><option value="part-time">Temps partiel</option><option value="contract">Contrat / Mission</option><option value="internship">Stage / Apprentissage</option></select></label><label>Karama (faritra na vola)<input id="postPay" maxlength="80" placeholder="Ohatra: 500–700 USD / volana"/></label></div>
+<label>Fahaiza-manao ilaina<input id="postSkills" maxlength="180" placeholder="Asio faingo: maçonnerie, sécurité, ..." required=""/></label>
+<label>Famaritana sy andraikitra<textarea id="postDescription" maxlength="1000" placeholder="Asa hatao, ora, toerana, fepetra, tombontsoa..." required="" rows="4"></textarea></label>
+<label>Fomba fangatahana (email na rohy ofisialy)<input id="postContact" maxlength="180" placeholder="recrutement@entreprise.com na https://..." required=""/></label>
+<label class="check-line"><input id="postConfirm" required="" type="checkbox"/> Manamarina aho fa marina ny vaovao ary ara-dalàna ny asa sy ny fepetra atolotra.</label>
+<button class="primary-btn" type="submit">Hamorona tolotra santionany</button>
+</form>
+<div class="inline-notice hidden" id="postJobNotice" role="status"></div>
+<p class="small-note">Ny tolotra noforonina eto dia miseho amin’ity navigateur ity ihany, tsy avoaka amin’ny Internet.</p>
+</div>
+<div class="subpanel"><h4>👥 Mitadiava olona araka ny fahaiza-manao</h4>
+<label>Fahaiza-manao tadiavina<input id="candidateSkill" placeholder="Ohatra: AutoCAD, plomberie, anglais" type="search"/></label>
+<label>Toerana tiana<input id="candidateLocation" placeholder="Ohatra: Madagascar, Remote" type="search"/></label>
+<div class="candidate-list" id="candidateResults"></div>
+<p class="small-note">Profil santionany no aseho. Tsy olona tena izy ary tsy misy fomba fifandraisana miasa amin’izao.</p>
+<div class="verification-box"><strong>🔐 Fanamarinana mpampiasa</strong><ol><li>Fanamarinana ny anarana sy fisoratana ara-dalànan’ny orinasa.</li><li>Fanamarinana tranonkala na adiresy mailaka ofisialy.</li><li>Fijerena antontan-taratasy amin’ny fomba azo antoka.</li><li>Fanamarinana ataon’ny ekipa G alohan’ny marika “Voamarina”.</li></ol><span class="status-pending">Tsy mbola misy fanamarinana tena izy amin’ity prototype ity.</span></div>
+</div>
+</div>
+</section><section class="job-panel hidden" data-job-panel="safety" id="jobSafetyPanel">
+<div class="job-panel-head"><div><h3>Fiarovana amin’ny hosoka sy ny tolotra sandoka</h3><p>Tokony harovana ny mpitady asa sy ny mpampiasa. Tsy manome antoka visa na asa ny G.</p></div><span class="safety-tag">LAHARAM-PAHAMEHANA</span></div>
+<div class="safety-grid">
+<article class="safety-card"><strong>🚫 Aza mandoa vola mialoha</strong><p>Tandremo ny saram-pandraisana mpiasa, saram-panadinana na saram-pahazoana asa takian’olona tsy voamarina.</p></article>
+<article class="safety-card"><strong>🏛️ Hamarino amin’ny loharano ofisialy</strong><p>Jereo ny fisoratana ara-dalànan’ny orinasa, ny masoivoho ary ny fepetra momba ny visa sy fahazoan-dalana hiasa.</p></article>
+<article class="safety-card"><strong>🔒 Arovy ny mombamomba anao</strong><p>Aza mizara tenimiafina, kaody OTP na antontan-kevitra amin’ny banky. Aza mandefa antontan-taratasy saropady amin’ny kaonty tsy fantatra.</p></article>
+<article class="safety-card"><strong>📄 Mitaky fifanarahana mazava</strong><p>Hamarino ny karama, ora fiasana, toerana, andraikitra, trano fonenana raha misy, ary ny fepetra hialana amin’ny asa.</p></article>
+</div>
+<div class="subpanel report-panel"><h4>🚩 Tatitra tolotra mampiahiahy</h4><form class="job-form" id="scamReportForm"><label>Antony ahiahiana<select id="reportReason"><option>Mitaky vola mialoha</option><option>Orinasa na mpampiasa tsy azo hamarinina</option><option>Fampanantenana visa na karama tsy mitombina</option><option>Fangatahana antontan-kevitra saropady</option><option>Antony hafa</option></select></label><label>Fanazavana<textarea id="reportDetails" maxlength="700" placeholder="Lazao ny antony sy ny antsipiriany tsy saropady" required="" rows="3"></textarea></label><button class="secondary-btn" type="submit">Hamorona tatitra santionany</button></form><div class="inline-notice hidden" id="reportNotice" role="status"></div><p class="small-note">Tsy alefa any amin’ny mpitantana ny tatitra amin’izao; ilaina ny backend sy rafitra fanohanana.</p></div>
+</section></section><section aria-label="G Academy" class="topic-view hidden" data-topic-view="academy"><button class="back-explorer" type="button">← Miverina amin’ny lohahevitra</button><nav class="topic-categories" aria-label="Sokajy G Academy"><a href="#academyCategories">📚 Taranja</a><a href="#academyCourses">🎓 Lesona</a><a href="#academyLesson">📝 Fanazaran-tena</a><a href="#academyTeachers">👩‍🏫 Mpampianatra</a><a href="#academyExternal">🌍 Cours ivelany</a></nav><h2 class="section-title" id="academy">🎓 G Academy — Fianarana ho an’ny rehetra</h2><p class="section-lead">Sehatra malalaka hianarana sy hizarana fahalalana: tsy anavahana firenena, fiteny, diplaoma na sehatra. Afaka manomboka amin’ny ambaratonga fototra ianao.</p><section aria-label="G Academy" class="academy-shell">
+<div class="academy-welcome"><div><span class="academy-kicker">LEARN · SHARE · GROW</span><h3>Ny fahalalana dia an’ny rehetra. 🌍</h3><p>Mitadiava taranja, vakio ny lesona santionany ary araho ny fandrosoanao.</p></div><div class="academy-stat"><strong id="academyProgress">0</strong><span>lesona vita</span></div></div>
+<div class="academy-tools"><label class="academy-search">🔎 <input aria-label="Mitadiava taranja" id="academySearch" placeholder="Mitadiava taranja na lohahevitra…" type="search"/></label><select aria-label="Ambaratonga" id="academyLevel"><option value="all">Ambaratonga rehetra</option><option value="Débutant">Débutant</option><option value="Intermédiaire">Intermédiaire</option><option value="Avancé">Avancé</option></select></div>
+<div class="academy-categories topic-anchor" id="academyCategories"><button class="academy-filter active" data-category="all">Rehetra</button><button class="academy-filter" data-category="Siansa">🔬 Siansa</button><button class="academy-filter" data-category="Teknolojia">🏗️ Teknolojia</button><button class="academy-filter" data-category="Fiteny">🗣️ Fiteny</button><button class="academy-filter" data-category="Humanités">📚 Humanités</button><button class="academy-filter" data-category="Religion">🕊️ Religion</button><button class="academy-filter" data-category="Arts">🎨 Arts</button><button class="academy-filter" data-category="Fiainana">🌱 Fiainana</button></div>
+<div class="academy-layout"><div><div class="academy-result-head"><strong id="academyResultCount">Taranja atolotra</strong><span class="small-muted">Santionany fanombohana</span></div><div aria-live="polite" class="academy-courses topic-anchor" id="academyCourses"></div></div>
+<aside class="academy-lesson" id="academyLesson"><div class="lesson-empty">📖<h3>Misafidiana taranja</h3><p>Tsindrio ny “Hijery lesona” amin’ny taranja iray hanombohana.</p></div></aside></div>
+<section class="academy-external topic-anchor" id="academyExternal" aria-labelledby="academyExternalTitle" style="margin:18px 0;padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--surface)">
+<h3 id="academyExternalTitle" style="margin:0 0 6px">🌍 Tranomboky: cours avy amin’ny sehatra iraisam-pirenena</h3>
+<p class="small-muted" style="margin:0 0 14px">Afaka misafidy cours maimaim-poana na misy sarany ianao. Sokafy ny rohy ofisialy hijerena ny cours sy ny fepetra.</p>
+<div class="academy-courses">
+<article class="academy-course"><div class="academy-brand"><img src="https://www.google.com/s2/favicons?domain=www.khanacademy.org&amp;sz=128" alt="Logo Khan Academy" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="brand-fallback" aria-hidden="true">KA</span><h4>Khan Academy</h4></div><p>Matematika, siansa, informatika ary taranja fototra. Maimaim-poana.</p><div class="course-meta"><span>Maimaim-poana</span><span>Fototra</span></div><a href="https://www.khanacademy.org/" target="_blank" rel="noopener noreferrer">Hijery cours ↗</a></article>
+<article class="academy-course"><div class="academy-brand"><img src="https://www.google.com/s2/favicons?domain=ocw.mit.edu&amp;sz=128" alt="Logo MIT OpenCourseWare" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="brand-fallback" aria-hidden="true">MO</span><h4>MIT OpenCourseWare</h4></div><p>Lesona sy fitaovana avy amin’ny taranja eny amin’ny oniversite MIT. Maimaim-poana; tsy manome mari-pahaizana MIT.</p><div class="course-meta"><span>Maimaim-poana</span><span>Oniversite</span></div><a href="https://ocw.mit.edu/" target="_blank" rel="noopener noreferrer">Hijery cours ↗</a></article>
+<article class="academy-course"><div class="academy-brand"><img src="https://www.google.com/s2/favicons?domain=www.open.edu&amp;sz=128" alt="Logo OpenLearn" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="brand-fallback" aria-hidden="true">O</span><h4>OpenLearn</h4></div><p>Cours fohy amin’ny lohahevitra maro avy amin’ny The Open University.</p><div class="course-meta"><span>Maimaim-poana</span><span>Ambaratonga maro</span></div><a href="https://www.open.edu/openlearn/" target="_blank" rel="noopener noreferrer">Hijery cours ↗</a></article>
+<article class="academy-course"><div class="academy-brand"><img src="https://www.google.com/s2/favicons?domain=www.freecodecamp.org&amp;sz=128" alt="Logo freeCodeCamp" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="brand-fallback" aria-hidden="true">F</span><h4>freeCodeCamp</h4></div><p>Fampianarana programmation, web development, Python ary database, miaraka amin’ny tetikasa.</p><div class="course-meta"><span>Maimaim-poana</span><span>Teknolojia</span></div><a href="https://www.freecodecamp.org/learn/" target="_blank" rel="noopener noreferrer">Hanomboka hianatra ↗</a></article>
+<article class="academy-course"><div class="academy-brand"><img src="https://www.google.com/s2/favicons?domain=alison.com&amp;sz=128" alt="Logo Alison" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="brand-fallback" aria-hidden="true">A</span><h4>Alison</h4></div><p>Cours amin’ny asa, fitantanana, fiteny, teknolojia ary fahaiza-miaina. Misy maimaim-poana; mety hisy sarany ny certificat.</p><div class="course-meta"><span>Maimaim-poana / misy sarany</span></div><a href="https://alison.com/" target="_blank" rel="noopener noreferrer">Hijery cours ↗</a></article>
+<article class="academy-course"><div class="academy-brand"><img src="https://www.google.com/s2/favicons?domain=www.saylor.org&amp;sz=128" alt="Logo Saylor Academy" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="brand-fallback" aria-hidden="true">SA</span><h4>Saylor Academy</h4></div><p>Cours self-paced amin’ny business, siansa informatika, communication ary taranja hafa.</p><div class="course-meta"><span>Maimaim-poana</span><span>Self-paced</span></div><a href="https://www.saylor.org/" target="_blank" rel="noopener noreferrer">Hijery cours ↗</a></article>
+<article class="academy-course"><div class="academy-brand"><img src="https://www.google.com/s2/favicons?domain=www.coursera.org&amp;sz=128" alt="Logo Coursera" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="brand-fallback" aria-hidden="true">C</span><h4>Coursera</h4></div><p>Cours sy programa avy amin’ny oniversite sy orinasa. Miova arakaraka ny cours ny safidy maimaim-poana sy ny sarany.</p><div class="course-meta"><span>Maimaim-poana sasany / misy sarany</span></div><a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer">Hijery cours ↗</a></article>
+<article class="academy-course"><div class="academy-brand"><img src="https://www.google.com/s2/favicons?domain=www.edx.org&amp;sz=128" alt="Logo edX" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="brand-fallback" aria-hidden="true">E</span><h4>edX</h4></div><p>Cours akademika sy matihanina. Misy cours azo arahina maimaim-poana; matetika misy sarany ny certificat voamarina.</p><div class="course-meta"><span>Maimaim-poana sasany / misy sarany</span></div><a href="https://www.edx.org/" target="_blank" rel="noopener noreferrer">Hijery cours ↗</a></article>
+<article class="academy-course"><div class="academy-brand"><img src="https://www.google.com/s2/favicons?domain=www.udemy.com&amp;sz=128" alt="Logo Udemy" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="brand-fallback" aria-hidden="true">U</span><h4>Udemy</h4></div><p>Cours azo vidiana tsirairay amin’ny sehatra maro: informatika, business, design, sary ary fahaiza-manao.</p><div class="course-meta"><span>Misy sarany</span><span>Misy cours maimaim-poana</span></div><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer">Hijery cours ↗</a></article>
+<article class="academy-course"><div class="academy-brand"><img src="https://www.google.com/s2/favicons?domain=www.futurelearn.com&amp;sz=128" alt="Logo FutureLearn" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="brand-fallback" aria-hidden="true">F</span><h4>FutureLearn</h4></div><p>Cours avy amin’ny oniversite sy fikambanana. Miankina amin’ny cours ny fahafahana miditra maimaim-poana sy ny certificat.</p><div class="course-meta"><span>Maimaim-poana sasany / misy sarany</span></div><a href="https://www.futurelearn.com/" target="_blank" rel="noopener noreferrer">Hijery cours ↗</a></article>
+<article class="academy-course"><div class="academy-brand"><img src="https://www.google.com/s2/favicons?domain=skillshop.withgoogle.com&amp;sz=128" alt="Logo Google Skillshop" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="brand-fallback" aria-hidden="true">GS</span><h4>Google Skillshop</h4></div><p>Fiofanana momba ny vokatra sy fitaovana Google, anisan’izany ny marketing digital.</p><div class="course-meta"><span>Maimaim-poana</span><span>Fahaiza-manao</span></div><a href="https://skillshop.withgoogle.com/" target="_blank" rel="noopener noreferrer">Hijery cours ↗</a></article>
+<article class="academy-course"><div class="academy-brand"><img src="https://www.google.com/s2/favicons?domain=learn.microsoft.com&amp;sz=128" alt="Logo Microsoft Learn" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="brand-fallback" aria-hidden="true">ML</span><h4>Microsoft Learn</h4></div><p>Fianarana momba ny Microsoft, cloud, data, AI ary développement logiciel.</p><div class="course-meta"><span>Maimaim-poana</span><span>Teknolojia</span></div><a href="https://learn.microsoft.com/training/" target="_blank" rel="noopener noreferrer">Hijery cours ↗</a></article>
+<article class="academy-course"><div class="academy-brand"><img src="https://www.google.com/s2/favicons?domain=skillsbuild.org&amp;sz=128" alt="Logo IBM SkillsBuild" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="brand-fallback" aria-hidden="true">IS</span><h4>IBM SkillsBuild</h4></div><p>Fiofanana momba ny teknolojia, data, cybersecurity ary fahaiza-manao amin’ny asa.</p><div class="course-meta"><span>Maimaim-poana ny ankamaroany</span></div><a href="https://skillsbuild.org/" target="_blank" rel="noopener noreferrer">Hijery cours ↗</a></article>
+</div>
+<p class="small-note" style="margin-top:12px">Fanamarihana: rohy mankany amin’ny sehatra ivelany ireo. Tsy mbola cours nampiantranoina mivantana ao amin’ny G izy ireo. Hamarino ao amin’ny tranonkala ofisialy ny vidiny, fiteny, fepetra fidirana ary raha misy certificat alohan’ny hisoratana anarana na handoavana vola.</p>
 </section>
-<section class="job-panel hidden" id="jobHirePanel" data-job-panel="hire">
-  <div class="job-panel-head"><div><h3>Ho an’ny orinasa sy mpanome tolotra asa</h3><p>Manomàna pejin’orinasa, mametraha tolotra mazava, ary tadiavo araka ny fahaiza-manao ny olona mety.</p></div><span class="demo-tag">FAMPISEHOANA</span></div>
-  <div class="employer-grid">
-    <div class="subpanel"><h4>📣 Mametraha tolotra asa</h4>
-      <form id="postJobForm" class="job-form">
-        <label>Anaran’ny asa<input id="postTitle" required maxlength="100" placeholder="Ohatra: Technicien bâtiment"></label>
-        <div class="form-two"><label>Orinasa / mpampiasa<input id="postCompany" required maxlength="100" placeholder="Anaran’ny orinasa"></label><label>Firenena na toerana<input id="postCountry" required maxlength="80" placeholder="Firenena / tanàna"></label></div>
-        <div class="form-two"><label>Diplaoma<select id="postQualification"><option value="none">Tsy takiana</option><option value="required">Takiana</option><option value="preferred">Tombony fa tsy voatery</option></select></label><label>Fomba fiasana<select id="postMode"><option value="onsite">En présentiel</option><option value="remote">Remote</option><option value="hybrid">Hybride</option></select></label></div>
-        <div class="form-two"><label>Taona farany ambany<select id="postAge"><option value="Araka ny lalàna eo an-toerana">Araka ny lalàna eo an-toerana</option><option value="18+">18 taona no ho miakatra</option></select></label><label>Karazana asa<select id="postType"><option value="full-time">Temps plein</option><option value="part-time">Temps partiel</option><option value="contract">Contrat / Mission</option><option value="internship">Stage / Apprentissage</option></select></label><label>Karama (faritra na vola)<input id="postPay" maxlength="80" placeholder="Ohatra: 500–700 USD / volana"></label></div>
-        <label>Fahaiza-manao ilaina<input id="postSkills" required maxlength="180" placeholder="Asio faingo: maçonnerie, sécurité, ..."></label>
-        <label>Famaritana sy andraikitra<textarea id="postDescription" required maxlength="1000" rows="4" placeholder="Asa hatao, ora, toerana, fepetra, tombontsoa..."></textarea></label>
-        <label>Fomba fangatahana (email na rohy ofisialy)<input id="postContact" required maxlength="180" placeholder="recrutement@entreprise.com na https://..."></label>
-        <label class="check-line"><input id="postConfirm" type="checkbox" required> Manamarina aho fa marina ny vaovao ary ara-dalàna ny asa sy ny fepetra atolotra.</label>
-        <button class="primary-btn" type="submit">Hamorona tolotra santionany</button>
-      </form>
-      <div id="postJobNotice" class="inline-notice hidden" role="status"></div>
-      <p class="small-note">Ny tolotra noforonina eto dia miseho amin’ity navigateur ity ihany, tsy avoaka amin’ny Internet.</p>
-    </div>
-    <div class="subpanel"><h4>👥 Mitadiava olona araka ny fahaiza-manao</h4>
-      <label>Fahaiza-manao tadiavina<input id="candidateSkill" type="search" placeholder="Ohatra: AutoCAD, plomberie, anglais"></label>
-      <label>Toerana tiana<input id="candidateLocation" type="search" placeholder="Ohatra: Madagascar, Remote"></label>
-      <div id="candidateResults" class="candidate-list"></div>
-      <p class="small-note">Profil santionany no aseho. Tsy olona tena izy ary tsy misy fomba fifandraisana miasa amin’izao.</p>
-      <div class="verification-box"><strong>🔐 Fanamarinana mpampiasa</strong><ol><li>Fanamarinana ny anarana sy fisoratana ara-dalànan’ny orinasa.</li><li>Fanamarinana tranonkala na adiresy mailaka ofisialy.</li><li>Fijerena antontan-taratasy amin’ny fomba azo antoka.</li><li>Fanamarinana ataon’ny ekipa G alohan’ny marika “Voamarina”.</li></ol><span class="status-pending">Tsy mbola misy fanamarinana tena izy amin’ity prototype ity.</span></div>
-    </div>
-  </div>
-</section>
-<section class="job-panel hidden" id="jobSafetyPanel" data-job-panel="safety">
-  <div class="job-panel-head"><div><h3>Fiarovana amin’ny hosoka sy ny tolotra sandoka</h3><p>Tokony harovana ny mpitady asa sy ny mpampiasa. Tsy manome antoka visa na asa ny G.</p></div><span class="safety-tag">LAHARAM-PAHAMEHANA</span></div>
-  <div class="safety-grid">
-    <article class="safety-card"><strong>🚫 Aza mandoa vola mialoha</strong><p>Tandremo ny saram-pandraisana mpiasa, saram-panadinana na saram-pahazoana asa takian’olona tsy voamarina.</p></article>
-    <article class="safety-card"><strong>🏛️ Hamarino amin’ny loharano ofisialy</strong><p>Jereo ny fisoratana ara-dalànan’ny orinasa, ny masoivoho ary ny fepetra momba ny visa sy fahazoan-dalana hiasa.</p></article>
-    <article class="safety-card"><strong>🔒 Arovy ny mombamomba anao</strong><p>Aza mizara tenimiafina, kaody OTP na antontan-kevitra amin’ny banky. Aza mandefa antontan-taratasy saropady amin’ny kaonty tsy fantatra.</p></article>
-    <article class="safety-card"><strong>📄 Mitaky fifanarahana mazava</strong><p>Hamarino ny karama, ora fiasana, toerana, andraikitra, trano fonenana raha misy, ary ny fepetra hialana amin’ny asa.</p></article>
-  </div>
-  <div class="subpanel report-panel"><h4>🚩 Tatitra tolotra mampiahiahy</h4><form id="scamReportForm" class="job-form"><label>Antony ahiahiana<select id="reportReason"><option>Mitaky vola mialoha</option><option>Orinasa na mpampiasa tsy azo hamarinina</option><option>Fampanantenana visa na karama tsy mitombina</option><option>Fangatahana antontan-kevitra saropady</option><option>Antony hafa</option></select></label><label>Fanazavana<textarea id="reportDetails" required maxlength="700" rows="3" placeholder="Lazao ny antony sy ny antsipiriany tsy saropady"></textarea></label><button class="secondary-btn" type="submit">Hamorona tatitra santionany</button></form><div id="reportNotice" class="inline-notice hidden" role="status"></div><p class="small-note">Tsy alefa any amin’ny mpitantana ny tatitra amin’izao; ilaina ny backend sy rafitra fanohanana.</p></div>
-</section>
-<h2 class="section-title" id="academy">🎓 G Academy — Fianarana ho an’ny rehetra</h2>
-<p class="section-lead">Sehatra malalaka hianarana sy hizarana fahalalana: tsy anavahana firenena, fiteny, diplaoma na sehatra. Afaka manomboka amin’ny ambaratonga fototra ianao.</p>
-<section class="academy-shell" aria-label="G Academy">
- <div class="academy-welcome"><div><span class="academy-kicker">LEARN · SHARE · GROW</span><h3>Ny fahalalana dia an’ny rehetra. 🌍</h3><p>Mitadiava taranja, vakio ny lesona santionany ary araho ny fandrosoanao.</p></div><div class="academy-stat"><strong id="academyProgress">0</strong><span>lesona vita</span></div></div>
- <div class="academy-tools"><label class="academy-search">🔎 <input id="academySearch" type="search" placeholder="Mitadiava taranja na lohahevitra…" aria-label="Mitadiava taranja"></label><select id="academyLevel" aria-label="Ambaratonga"><option value="all">Ambaratonga rehetra</option><option value="Débutant">Débutant</option><option value="Intermédiaire">Intermédiaire</option><option value="Avancé">Avancé</option></select></div>
- <div class="academy-categories" id="academyCategories"><button class="academy-filter active" data-category="all">Rehetra</button><button class="academy-filter" data-category="Siansa">🔬 Siansa</button><button class="academy-filter" data-category="Teknolojia">🏗️ Teknolojia</button><button class="academy-filter" data-category="Fiteny">🗣️ Fiteny</button><button class="academy-filter" data-category="Humanités">📚 Humanités</button><button class="academy-filter" data-category="Religion">🕊️ Religion</button><button class="academy-filter" data-category="Arts">🎨 Arts</button><button class="academy-filter" data-category="Fiainana">🌱 Fiainana</button></div>
- <div class="academy-layout"><div><div class="academy-result-head"><strong id="academyResultCount">Taranja atolotra</strong><span class="small-muted">Santionany fanombohana</span></div><div class="academy-courses" id="academyCourses" aria-live="polite"></div></div>
- <aside class="academy-lesson" id="academyLesson"><div class="lesson-empty">📖<h3>Misafidiana taranja</h3><p>Tsindrio ny “Hijery lesona” amin’ny taranja iray hanombohana.</p></div></aside></div>
- <div class="academy-bottom"><div><strong>👩‍🏫 Mpampianatra sy mpizara fahalalana</strong><p>Afaka manolotra taranja sy lesona ny olona manana traikefa, fahaizana na fahalalana azo zaraina.</p></div><span class="demo-tag">DÉMO LOCALE</span></div>
- <p class="small-note">Fanamarihana: voatahiry ao amin’ny navigateur ampiasaina ihany ny fandrosoana amin’ity prototype ity. Mbola ilaina ny kaonty, backend, fanamarinana votoaty ary rafitra mpampianatra/mpianatra alohan’ny hiasan’ny G Academy amin’ny Internet.</p>
-</section>
-<h2 class="section-title" id="travel">✈️ G Travel — Mpiara-dia</h2><section class="grid"><article class="card"><div class="icon">🛂</div><h3>Fampahalalana momba ny dia</h3><p>Visa, pasipaoro, fepetra fidirana ary loharano ofisialy.</p></article><article class="card"><div class="icon">🗺️</div><h3>Toerana & fitaterana</h3><p>Sarintany, hotely, fitaterana ary mpitari-dalana eo an-toerana.</p></article><article class="card"><div class="icon">🌐</div><h3>Fiteny & vola</h3><p>Fandikana teny sy fanovam-bola ho fanamorana ny dia.</p></article><article class="card"><div class="icon">🆘</div><h3>SOS International</h3><p>Fampahalalana momba ny vonjy taitra sy masoivoho. Hamarino hatrany amin'ny loharano ofisialy.</p></article></section>
-<h2 class="section-title" id="support">🛠️ Fanampiana & Feedback</h2><section class="grid"><article class="card"><div class="icon">📩</div><h3>Report a Problem</h3><p>Tatitra olana ara-teknika, kaonty na varotra.</p></article><article class="card"><div class="icon">💡</div><h3>Send Feedback</h3><p>Soso-kevitra hanatsarana ny G.</p></article><article class="card"><div class="icon">🎧</div><h3>Support Center</h3><p>Fanampiana sy fanarahana ny satan'ny fangatahana.</p></article></section>
-
-<h2 class="section-title" id="security">🛡️ Day 11 — Fiarovana sy fitsapana</h2>
-<section class="grid" aria-label="Fiarovana sy fitsapana">
- <article class="card"><div class="icon">🔐</div><h3>Fiarovana kaonty</h3><p>Rehefa ampidirina ny backend: tenimiafina hashée (Argon2id na bcrypt), fanamarinana mailaka, famerana andrana fidirana, session azo antoka ary MFA raha azo atao.</p></article>
- <article class="card"><div class="icon">🧱</div><h3>Fiarovana angona</h3><p>HTTPS, RLS amin’ny Supabase, fahazoan-dalana faran’izay kely, fanamarinana input amin’ny serveur, fiarovana XSS/CSRF ary tsiambaratelo tsy apetraka ao amin’ny kaody public.</p></article>
- <article class="card"><div class="icon">🧑‍⚖️</div><h3>Fiarovana ny mpampiasa</h3><p>Politika momba ny tsiambaratelo, fitsipika fampiasana, tatitra sy fanakanana kaonty, fanaraha-maso votoaty, ary fomba fangatahana famafana angona.</p></article>
- <article class="card"><div class="icon">🧪</div><h3>Fitsapana mandeha ho azy</h3><p>Jereo ny rohy, singa HTML fototra, script, fampisehoana finday ary fitahirizana eo an-toerana. Ity fitsapana eto ambany ity dia fanamarinana fototra ihany.</p><button class="secondary-btn" id="runChecks" type="button">Alefaso ny fitsapana</button><div id="testResults" class="inline-notice" role="status" aria-live="polite">Mbola tsy natao ny fitsapana.</div></article>
-</section>
-<h2 class="section-title" id="launch">🚀 Day 12 — Fanomanana famoahana ampahibemaso</h2>
-<section class="card launch-card">
- <p><strong>Safidy fotodrafitrasa nifanarahana:</strong> GitHub hitahirizana kaody, Cloudflare Pages ho hosting, Supabase ho database/authentication/Realtime, ary HTTPS.</p>
- <ol class="launch-steps">
-  <li><strong>GitHub:</strong> mamorona repository G, mampiditra ny rakitra farany, ary mitazona backup.</li>
-  <li><strong>Supabase:</strong> mamorona project, manorina schema sy Row Level Security (RLS), Auth, policies ary fitahirizana sary; aza apetraka amin’ny client ny service-role key.</li>
-  <li><strong>Fanomanana kaody:</strong> esorina ny angona santionany, ampifandraisina amin’ny API azo antoka ny social, Jobs, Academy ary Marketplace; ampiana moderation sy fitsipika tsiambaratelo.</li>
-  <li><strong>Cloudflare Pages:</strong> ampifandraisina amin’ny repository GitHub, faritana ny build settings, ary alefa aloha amin’ny preview URL hanaovana fitsapana.</li>
-  <li><strong>Fiarovana sy fanamarinana:</strong> HTTPS, security headers, environment variables, backup, fitsapana finday sy navigateur, ary fanaraha-maso ny fahadisoana.</li>
-  <li><strong>Famoahana:</strong> rehefa vita ireo rehetra ireo vao ampifandraisina ny domaine public ary avoaka amin’ny olona.</li>
- </ol>
- <div class="notice">⚠️ Zava-dehibe: vita eto ny fanomanana sy ny checklist Day 11–12, fa tsy mbola navoaka amin’ny Internet ny G. Tsy mbola manana fidirana amin’ny kaontinao GitHub, Cloudflare na Supabase aho, ary tsy mbola mifandray amin’ny backend ny prototype. Tsy tokony hatao public raha tsy vita ny backend, fiarovana, fitsapana ary fanamarinana ara-dalàna.</div>
- <p class="small-note">Dingana manaraka ara-teknika: mamorona repository sy Supabase project, avy eo mampifandray ny rakitra. Mila fanatanterahana ao amin’ny kaontinao ireo dingana ireo.</p>
-</section>
-
-<div class="notice">⚠️ Ity dia santionany voalohany (prototype) mampiseho ny endrika sy ny sokajy. Mbola tsy misy kaonty tena izy, chat mivantana, fandoavam-bola, tahiry angona, fanamarinana orinasa tena izy, fandefasana fangatahana asa, na fanohanana mpanjifa miasa. Mila amboarina sy sedraina ireo, ary ampiana fiarovana sy politika momba ny tsiambaratelo, alohan'ny famoahana ampahibemaso.</div>
-</main><footer>G © 2026 — One World. One Platform. Everyone Belongs.</footer>
+<div class="academy-bottom topic-anchor" id="academyTeachers"><div><strong>👩‍🏫 Mpampianatra sy mpizara fahalalana</strong><p>Afaka manolotra taranja sy lesona ny olona manana traikefa, fahaizana na fahalalana azo zaraina.</p></div><span class="demo-tag">DÉMO LOCALE</span></div>
+<p class="small-note">Fanamarihana: voatahiry ao amin’ny navigateur ampiasaina ihany ny fandrosoana amin’ity prototype ity. Mbola ilaina ny kaonty, backend, fanamarinana votoaty ary rafitra mpampianatra/mpianatra alohan’ny hiasan’ny G Academy amin’ny Internet.</p>
+</section></section><section aria-label="Travel" class="topic-view hidden" data-topic-view="travel"><button class="back-explorer" type="button">← Miverina amin’ny lohahevitra</button><nav class="topic-categories" aria-label="Sokajy Travel"><a href="#travel-info">🛂 Visa sy antontan-taratasy</a><a href="#travel-destinations">🗺️ Toerana sy fitaterana</a><a href="#travel-tools">🌐 Fiteny sy vola</a><a href="#travel-emergency">🆘 Vonjy taitra</a></nav><h2 class="section-title" id="travel">✈️ G Travel — Mpiara-dia</h2><section class="grid"><article class="card topic-anchor" id="travel-info"><div class="icon">🛂</div><h3>Fampahalalana momba ny dia</h3><p>Visa, pasipaoro, fepetra fidirana ary loharano ofisialy.</p></article><article class="card topic-anchor" id="travel-destinations"><div class="icon">🗺️</div><h3>Toerana &amp; fitaterana</h3><p>Sarintany, hotely, fitaterana ary mpitari-dalana eo an-toerana.</p></article><article class="card topic-anchor" id="travel-tools"><div class="icon">🌐</div><h3>Fiteny &amp; vola</h3><p>Fandikana teny sy fanovam-bola ho fanamorana ny dia.</p></article><article class="card topic-anchor" id="travel-emergency"><div class="icon">🆘</div><h3>SOS International</h3><p>Fampahalalana momba ny vonjy taitra sy masoivoho. Hamarino hatrany amin'ny loharano ofisialy.</p></article></section></section><section aria-label="Services &amp; Support" class="topic-view hidden" data-topic-view="support"><button class="back-explorer" type="button">← Miverina amin’ny lohahevitra</button><nav class="topic-categories" aria-label="Sokajy Fanampiana"><a href="#support-report">📩 Tatitra olana</a><a href="#support-feedback">💡 Hevitra</a><a href="#support-center">🎧 Foibe fanampiana</a></nav><h2 class="section-title" id="support">🛠️ Fanampiana &amp; Feedback</h2><section class="grid"><article class="card topic-anchor" id="support-report"><div class="icon">📩</div><h3>Report a Problem</h3><p>Tatitra olana ara-teknika, kaonty na varotra.</p></article><article class="card topic-anchor" id="support-feedback"><div class="icon">💡</div><h3>Send Feedback</h3><p>Soso-kevitra hanatsarana ny G.</p></article><article class="card topic-anchor" id="support-center"><div class="icon">🎧</div><h3>Support Center</h3><p>Fanampiana sy fanarahana ny satan'ny fangatahana.</p></article></section></section><div class="notice">⚠️ Ity dia santionany voalohany (prototype) mampiseho ny endrika sy ny sokajy. Mbola tsy misy kaonty tena izy, chat mivantana, fandoavam-bola, tahiry angona, fanamarinana orinasa tena izy, fandefasana fangatahana asa, na fanohanana mpanjifa miasa. Mila amboarina sy sedraina ireo, ary ampiana fiarovana sy politika momba ny tsiambaratelo, alohan'ny famoahana ampahibemaso.</div><details class="internal-reference"><summary>Fampahalalana ara-teknika (ho an’ny fitantanana)</summary><h2 class="section-title" id="security">🛡️ Day 11 — Fiarovana sy fitsapana</h2><section aria-label="Fiarovana sy fitsapana" class="grid">
+<article class="card"><div class="icon">🔐</div><h3>Fiarovana kaonty</h3><p>Rehefa ampidirina ny backend: tenimiafina hashée (Argon2id na bcrypt), fanamarinana mailaka, famerana andrana fidirana, session azo antoka ary MFA raha azo atao.</p></article>
+<article class="card"><div class="icon">🧱</div><h3>Fiarovana angona</h3><p>HTTPS, RLS amin’ny Supabase, fahazoan-dalana faran’izay kely, fanamarinana input amin’ny serveur, fiarovana XSS/CSRF ary tsiambaratelo tsy apetraka ao amin’ny kaody public.</p></article>
+<article class="card"><div class="icon">🧑‍⚖️</div><h3>Fiarovana ny mpampiasa</h3><p>Politika momba ny tsiambaratelo, fitsipika fampiasana, tatitra sy fanakanana kaonty, fanaraha-maso votoaty, ary fomba fangatahana famafana angona.</p></article>
+<article class="card"><div class="icon">🧪</div><h3>Fitsapana mandeha ho azy</h3><p>Jereo ny rohy, singa HTML fototra, script, fampisehoana finday ary fitahirizana eo an-toerana. Ity fitsapana eto ambany ity dia fanamarinana fototra ihany.</p><button class="secondary-btn" id="runChecks" type="button">Alefaso ny fitsapana</button><div aria-live="polite" class="inline-notice" id="testResults" role="status">Mbola tsy natao ny fitsapana.</div></article>
+</section><h2 class="section-title" id="launch">🚀 Day 12 — Fanomanana famoahana ampahibemaso</h2><section class="card launch-card">
+<p><strong>Safidy fotodrafitrasa nifanarahana:</strong> GitHub hitahirizana kaody, Cloudflare Pages ho hosting, Supabase ho database/authentication/Realtime, ary HTTPS.</p>
+<ol class="launch-steps">
+<li><strong>GitHub:</strong> mamorona repository G, mampiditra ny rakitra farany, ary mitazona backup.</li>
+<li><strong>Supabase:</strong> mamorona project, manorina schema sy Row Level Security (RLS), Auth, policies ary fitahirizana sary; aza apetraka amin’ny client ny service-role key.</li>
+<li><strong>Fanomanana kaody:</strong> esorina ny angona santionany, ampifandraisina amin’ny API azo antoka ny social, Jobs, Academy ary Marketplace; ampiana moderation sy fitsipika tsiambaratelo.</li>
+<li><strong>Cloudflare Pages:</strong> ampifandraisina amin’ny repository GitHub, faritana ny build settings, ary alefa aloha amin’ny preview URL hanaovana fitsapana.</li>
+<li><strong>Fiarovana sy fanamarinana:</strong> HTTPS, security headers, environment variables, backup, fitsapana finday sy navigateur, ary fanaraha-maso ny fahadisoana.</li>
+<li><strong>Famoahana:</strong> rehefa vita ireo rehetra ireo vao ampifandraisina ny domaine public ary avoaka amin’ny olona.</li>
+</ol>
+<div class="notice">⚠️ Zava-dehibe: vita eto ny fanomanana sy ny checklist Day 11–12, fa tsy mbola navoaka amin’ny Internet ny G. Tsy mbola manana fidirana amin’ny kaontinao GitHub, Cloudflare na Supabase aho, ary tsy mbola mifandray amin’ny backend ny prototype. Tsy tokony hatao public raha tsy vita ny backend, fiarovana, fitsapana ary fanamarinana ara-dalàna.</div>
+<p class="small-note">Dingana manaraka ara-teknika: mamorona repository sy Supabase project, avy eo mampifandray ny rakitra. Mila fanatanterahana ao amin’ny kaontinao ireo dingana ireo.</p>
+</section></details></main><footer>G © 2026 — One World. One Platform. Everyone Belongs.</footer>
 <script>
 const translations={
 mg:{welcome:'Tongasoa eto amin’ny G',intro:'Sehatra iray mampifandray olona, fahalalana, varotra ary kolontsaina maneran-tany.',social:'👥 Tambajotra sosialy'},
@@ -203,13 +339,25 @@ ar:{welcome:'مرحبًا بكم في G',intro:'منصة تربط الناس و�
 tr:{welcome:"G'ye hoş geldiniz",intro:'Dünyanın dört bir yanındaki insanları, bilgiyi, ticareti ve kültürleri buluşturan platform.',social:'👥 Sosyal ağ'},
 id:{welcome:'Selamat datang di G',intro:'Platform yang menghubungkan orang, pengetahuan, perdagangan, dan budaya di seluruh dunia.',social:'👥 Jejaring sosial'}
 };
+const pageLabels={"mg":{"navSocial":"Sosialy","navMarket":"Tsena","navJobs":"Asa","navAcademy":"Akademia","navTravel":"Dia","navSupport":"Fanampiana","socialTitle":"Tambajotra sosialy","marketTitle":"G Marketplace — Tsena manerantany","jobsTitle":"G Jobs — Asa iraisam-pirenena","academyTitle":"G Academy — Fianarana ho an’ny rehetra","travelTitle":"G Travel — Mpiara-dia","supportTitle":"Fanampiana & Hevitra","securityTitle":"Fiarovana sy fitsapana","launchTitle":"Fanomanana famoahana ampahibemaso","search":"Mitadiava olona, asa, vokatra, lesona, toerana…","dark":"🌙 Maizina","light":"☀️ Mazava","dir":"ltr"},"fr":{"navSocial":"Réseau social","navMarket":"Marché","navJobs":"Emplois","navAcademy":"Académie","navTravel":"Voyages","navSupport":"Assistance","socialTitle":"Réseau social","marketTitle":"G Marketplace — Marché mondial","jobsTitle":"G Jobs — Emplois internationaux","academyTitle":"G Academy — Apprendre pour tous","travelTitle":"G Travel — Compagnon de voyage","supportTitle":"Aide et commentaires","securityTitle":"Sécurité et tests","launchTitle":"Préparation au lancement public","search":"Rechercher des personnes, emplois, produits, cours, lieux…","dark":"🌙 Sombre","light":"☀️ Clair","dir":"ltr"},"en":{"navSocial":"Social","navMarket":"Marketplace","navJobs":"Jobs","navAcademy":"Academy","navTravel":"Travel","navSupport":"Support","socialTitle":"Social Network","marketTitle":"G Marketplace — Global Marketplace","jobsTitle":"G Jobs — International Jobs","academyTitle":"G Academy — Learning for Everyone","travelTitle":"G Travel — Travel Companion","supportTitle":"Help & Feedback","securityTitle":"Security & Testing","launchTitle":"Public Launch Preparation","search":"Find people, jobs, products, lessons, places…","dark":"🌙 Dark","light":"☀️ Light","dir":"ltr"},"es":{"navSocial":"Red social","navMarket":"Mercado","navJobs":"Empleos","navAcademy":"Academia","navTravel":"Viajes","navSupport":"Ayuda","socialTitle":"Red social","marketTitle":"G Marketplace — Mercado mundial","jobsTitle":"G Jobs — Empleos internacionales","academyTitle":"G Academy — Aprendizaje para todos","travelTitle":"G Travel — Compañero de viaje","supportTitle":"Ayuda y comentarios","securityTitle":"Seguridad y pruebas","launchTitle":"Preparación para el lanzamiento público","search":"Buscar personas, empleos, productos, cursos y lugares…","dark":"🌙 Oscuro","light":"☀️ Claro","dir":"ltr"},"pt":{"navSocial":"Rede social","navMarket":"Mercado","navJobs":"Empregos","navAcademy":"Academia","navTravel":"Viagens","navSupport":"Ajuda","socialTitle":"Rede social","marketTitle":"G Marketplace — Mercado global","jobsTitle":"G Jobs — Empregos internacionais","academyTitle":"G Academy — Aprendizagem para todos","travelTitle":"G Travel — Companheiro de viagem","supportTitle":"Ajuda e feedback","securityTitle":"Segurança e testes","launchTitle":"Preparação para o lançamento público","search":"Pesquisar pessoas, empregos, produtos, aulas e locais…","dark":"🌙 Escuro","light":"☀️ Claro","dir":"ltr"},"de":{"navSocial":"Soziales Netzwerk","navMarket":"Marktplatz","navJobs":"Jobs","navAcademy":"Akademie","navTravel":"Reisen","navSupport":"Hilfe","socialTitle":"Soziales Netzwerk","marketTitle":"G Marketplace — Weltweiter Marktplatz","jobsTitle":"G Jobs — Internationale Stellenangebote","academyTitle":"G Academy — Lernen für alle","travelTitle":"G Travel — Reisebegleiter","supportTitle":"Hilfe und Feedback","securityTitle":"Sicherheit und Tests","launchTitle":"Vorbereitung der öffentlichen Veröffentlichung","search":"Personen, Jobs, Produkte, Kurse und Orte suchen…","dark":"🌙 Dunkel","light":"☀️ Hell","dir":"ltr"},"it":{"navSocial":"Social network","navMarket":"Mercato","navJobs":"Lavoro","navAcademy":"Accademia","navTravel":"Viaggi","navSupport":"Assistenza","socialTitle":"Social network","marketTitle":"G Marketplace — Mercato globale","jobsTitle":"G Jobs — Lavoro internazionale","academyTitle":"G Academy — Apprendimento per tutti","travelTitle":"G Travel — Compagno di viaggio","supportTitle":"Aiuto e feedback","securityTitle":"Sicurezza e test","launchTitle":"Preparazione al lancio pubblico","search":"Cerca persone, lavori, prodotti, lezioni e luoghi…","dark":"🌙 Scuro","light":"☀️ Chiaro","dir":"ltr"},"ru":{"navSocial":"Соцсеть","navMarket":"Маркетплейс","navJobs":"Работа","navAcademy":"Академия","navTravel":"Путешествия","navSupport":"Поддержка","socialTitle":"Социальная сеть","marketTitle":"G Marketplace — Мировой рынок","jobsTitle":"G Jobs — Международная работа","academyTitle":"G Academy — Обучение для всех","travelTitle":"G Travel — Помощник в путешествиях","supportTitle":"Помощь и отзывы","securityTitle":"Безопасность и тестирование","launchTitle":"Подготовка к публичному запуску","search":"Поиск людей, вакансий, товаров, уроков и мест…","dark":"🌙 Тёмная","light":"☀️ Светлая","dir":"ltr"},"zh":{"navSocial":"社交","navMarket":"市场","navJobs":"工作","navAcademy":"学院","navTravel":"旅行","navSupport":"帮助","socialTitle":"社交网络","marketTitle":"G Marketplace — 全球市场","jobsTitle":"G Jobs — 国际工作","academyTitle":"G Academy — 人人皆可学习","travelTitle":"G Travel — 旅行助手","supportTitle":"帮助与反馈","securityTitle":"安全与测试","launchTitle":"公开发布准备","search":"搜索用户、工作、商品、课程和地点…","dark":"🌙 深色","light":"☀️ 浅色","dir":"ltr"},"hi":{"navSocial":"सोशल नेटवर्क","navMarket":"बाज़ार","navJobs":"नौकरियाँ","navAcademy":"अकादमी","navTravel":"यात्रा","navSupport":"सहायता","socialTitle":"सोशल नेटवर्क","marketTitle":"G Marketplace — वैश्विक बाज़ार","jobsTitle":"G Jobs — अंतरराष्ट्रीय नौकरियाँ","academyTitle":"G Academy — सभी के लिए सीखना","travelTitle":"G Travel — यात्रा साथी","supportTitle":"सहायता और सुझाव","securityTitle":"सुरक्षा और परीक्षण","launchTitle":"सार्वजनिक लॉन्च की तैयारी","search":"लोग, नौकरियाँ, उत्पाद, पाठ और स्थान खोजें…","dark":"🌙 डार्क","light":"☀️ लाइट","dir":"ltr"},"ja":{"navSocial":"ソーシャル","navMarket":"マーケット","navJobs":"求人","navAcademy":"アカデミー","navTravel":"旅行","navSupport":"サポート","socialTitle":"ソーシャルネットワーク","marketTitle":"G Marketplace — グローバルマーケット","jobsTitle":"G Jobs — 国際求人","academyTitle":"G Academy — すべての人の学び","travelTitle":"G Travel — 旅行サポート","supportTitle":"ヘルプとフィードバック","securityTitle":"セキュリティとテスト","launchTitle":"一般公開の準備","search":"人、仕事、商品、レッスン、場所を検索…","dark":"🌙 ダーク","light":"☀️ ライト","dir":"ltr"},"ko":{"navSocial":"소셜","navMarket":"마켓","navJobs":"채용","navAcademy":"아카데미","navTravel":"여행","navSupport":"지원","socialTitle":"소셜 네트워크","marketTitle":"G Marketplace — 글로벌 마켓","jobsTitle":"G Jobs — 국제 채용","academyTitle":"G Academy — 모두를 위한 학습","travelTitle":"G Travel — 여행 동반자","supportTitle":"도움말 및 피드백","securityTitle":"보안 및 테스트","launchTitle":"공개 출시 준비","search":"사람, 일자리, 상품, 강의, 장소 검색…","dark":"🌙 다크","light":"☀️ 라이트","dir":"ltr"},"ar":{"navSocial":"شبكة اجتماعية","navMarket":"السوق","navJobs":"الوظائف","navAcademy":"الأكاديمية","navTravel":"السفر","navSupport":"الدعم","socialTitle":"الشبكة الاجتماعية","marketTitle":"G Marketplace — السوق العالمي","jobsTitle":"G Jobs — وظائف دولية","academyTitle":"G Academy — التعلّم للجميع","travelTitle":"G Travel — رفيق السفر","supportTitle":"المساعدة والملاحظات","securityTitle":"الأمان والاختبار","launchTitle":"الاستعداد للإطلاق العام","search":"ابحث عن أشخاص ووظائف ومنتجات ودروس وأماكن…","dark":"🌙 داكن","light":"☀️ فاتح","dir":"rtl"},"tr":{"navSocial":"Sosyal ağ","navMarket":"Pazar yeri","navJobs":"İş ilanları","navAcademy":"Akademi","navTravel":"Seyahat","navSupport":"Destek","socialTitle":"Sosyal ağ","marketTitle":"G Marketplace — Küresel pazar yeri","jobsTitle":"G Jobs — Uluslararası işler","academyTitle":"G Academy — Herkes için öğrenme","travelTitle":"G Travel — Seyahat arkadaşı","supportTitle":"Yardım ve geri bildirim","securityTitle":"Güvenlik ve testler","launchTitle":"Herkese açık yayına hazırlık","search":"Kişi, iş, ürün, ders ve yer ara…","dark":"🌙 Koyu","light":"☀️ Açık","dir":"ltr"},"id":{"navSocial":"Jejaring sosial","navMarket":"Marketplace","navJobs":"Pekerjaan","navAcademy":"Akademi","navTravel":"Perjalanan","navSupport":"Bantuan","socialTitle":"Jejaring Sosial","marketTitle":"G Marketplace — Pasar Global","jobsTitle":"G Jobs — Pekerjaan Internasional","academyTitle":"G Academy — Belajar untuk Semua","travelTitle":"G Travel — Teman Perjalanan","supportTitle":"Bantuan & Masukan","securityTitle":"Keamanan & Pengujian","launchTitle":"Persiapan Peluncuran Publik","search":"Cari orang, pekerjaan, produk, pelajaran, dan tempat…","dark":"🌙 Gelap","light":"☀️ Terang","dir":"ltr"}};
 const root=document.documentElement;
 const themeToggle=document.getElementById('themeToggle');
-function setTheme(theme){root.dataset.theme=theme;const dark=theme==='dark';themeToggle.textContent=dark?'☀️ Light':'🌙 Dark';themeToggle.setAttribute('aria-pressed',String(dark));themeToggle.setAttribute('aria-label',dark?'Activate light mode':'Activate dark mode');try{localStorage.setItem('g-theme',theme)}catch(e){}}
+function setTheme(theme){root.dataset.theme=theme;const dark=theme==='dark';const p=pageLabels[document.getElementById('lang').value]||pageLabels.en;themeToggle.textContent=dark?p.light:p.dark;themeToggle.setAttribute('aria-pressed',String(dark));themeToggle.setAttribute('aria-label',dark?p.light:p.dark);try{localStorage.setItem('g-theme',theme)}catch(e){}}
 let savedTheme='light';try{savedTheme=localStorage.getItem('g-theme')||'light'}catch(e){}
 setTheme(savedTheme);
+applyLanguage(document.getElementById('lang').value);
 themeToggle.addEventListener('click',()=>setTheme(root.dataset.theme==='dark'?'light':'dark'));
-document.getElementById('lang').addEventListener('change',e=>{const t=translations[e.target.value];document.getElementById('welcome').textContent=t.welcome;document.getElementById('intro').textContent=t.intro;document.getElementById('socialTitle').textContent=t.social;});
+function applyLanguage(code){
+ const t=translations[code]||translations.en,p=pageLabels[code]||pageLabels.en;
+ root.lang=code;root.dir=p.dir;
+ document.getElementById('welcome').textContent=t.welcome;
+ document.getElementById('intro').textContent=t.intro;
+ for(const [selector,key] of [['a[href="#socialWorkspace"]','navSocial'],['a[href="#marketplace"]','navMarket'],['a[href="#jobs"]','navJobs'],['a[href="#academy"]','navAcademy'],['a[href="#travel"]','navTravel'],['a[href="#support"]','navSupport'],['#socialTitle','socialTitle'],['#marketplace','marketTitle'],['#jobs','jobsTitle'],['#academy','academyTitle'],['#travel','travelTitle'],['#support','supportTitle'],['#security','securityTitle'],['#launch','launchTitle']]){const el=document.querySelector(selector);if(el)el.textContent=p[key];}
+ document.getElementById('search').placeholder=p.search;
+ document.title='G — One World. One Platform.';
+ setTheme(root.dataset.theme||'light');
+}
+document.getElementById('lang').addEventListener('change',e=>applyLanguage(e.target.value));
 document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.toLocaleLowerCase();document.querySelectorAll('main .card').forEach(c=>c.classList.toggle('hidden',!c.innerText.toLocaleLowerCase().includes(q)));});
 
 
@@ -337,4 +485,248 @@ document.getElementById('runChecks')?.addEventListener('click',()=>{
  box.textContent=`Vita: ${passed}/${checks.length} fanamarinana fototra. `+checks.map(x=>(x[1]?'✓ ':'✗ ')+x[0]).join(' · ');
  box.classList.remove('hidden');
 });
+</script>
+<!-- G multilingual full-page translation layer -->
+<style>
+#google_translate_element{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.goog-te-banner-frame,.goog-te-banner-frame.skiptranslate,
+iframe.goog-te-banner-frame,.goog-te-menu-frame,#goog-gt-tt,
+.goog-te-balloon-frame{display:none!important;visibility:hidden!important;height:0!important}
+html,body{top:0!important;margin-top:0!important}
+.goog-logo-link,.goog-te-gadget span{display:none!important}
+#g-language-loader{
+  position:fixed;inset:0;z-index:999999;display:none;align-items:center;
+  justify-content:center;flex-direction:column;gap:14px;background:#f7f9fd;
+  color:#17233b;font-family:Arial,Helvetica,sans-serif;text-align:center;
+}
+#g-language-loader.is-visible{display:flex}
+#g-language-loader .g-loader-logo{font-size:52px;font-weight:900;letter-spacing:-4px;color:#2457d6}
+#g-language-loader .g-loader-text{font-size:15px;font-weight:700}
+#g-language-loader .g-loader-spinner{
+  width:30px;height:30px;border:3px solid #dce5ff;border-top-color:#2457d6;
+  border-radius:50%;animation:g-loader-spin .8s linear infinite
+}
+@keyframes g-loader-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){#g-language-loader .g-loader-spinner{animation:none}}
+</style>
+<div aria-hidden="true" aria-live="polite" id="g-language-loader" role="status">
+<div class="g-loader-logo">G.</div>
+<div aria-hidden="true" class="g-loader-spinner"></div>
+<div class="g-loader-text">Preparing your language…</div>
+</div>
+<div aria-hidden="true" id="google_translate_element"></div>
+<script>
+(function(){
+  const supported = ['mg','fr','en','es','pt','de','it','ru','zh-CN','hi','ja','ko','ar','tr','id'];
+  let translatorReady = false;
+  let pendingLanguage = null;
+  let finishTimer = null;
+  let mutationObserver = null;
+
+  function hideGoogleTranslateBar(){
+    document.querySelectorAll('.goog-te-banner-frame, iframe.goog-te-banner-frame, .goog-te-menu-frame, #goog-gt-tt, .goog-te-balloon-frame').forEach(function(el){
+      el.style.setProperty('display','none','important');
+      el.style.setProperty('visibility','hidden','important');
+      el.style.setProperty('height','0','important');
+    });
+    if(document.body){document.body.style.setProperty('top','0','important');document.body.style.setProperty('margin-top','0','important');}
+    if(document.documentElement){document.documentElement.style.setProperty('top','0','important');}
+  }
+  function showLanguageLoader(){
+    const loader=document.getElementById('g-language-loader');
+    if(loader){loader.classList.add('is-visible');loader.setAttribute('aria-hidden','false');}
+    if(finishTimer) clearTimeout(finishTimer);
+  }
+  function hideLanguageLoader(){
+    const loader=document.getElementById('g-language-loader');
+    if(loader){loader.classList.remove('is-visible');loader.setAttribute('aria-hidden','true');}
+    if(finishTimer){clearTimeout(finishTimer);finishTimer=null;}
+    if(mutationObserver){mutationObserver.disconnect();mutationObserver=null;}
+  }
+  function watchTranslation(){
+    if(mutationObserver) mutationObserver.disconnect();
+    let lastChange=Date.now();
+    const started=Date.now();
+    mutationObserver=new MutationObserver(function(mutations){
+      if(mutations.some(m=>m.type==='characterData'||m.type==='childList')) lastChange=Date.now();
+    });
+    if(document.body) mutationObserver.observe(document.body,{subtree:true,childList:true,characterData:true});
+    const check=function(){
+      const elapsed=Date.now()-started;
+      const quiet=Date.now()-lastChange;
+      if((elapsed>=1200 && quiet>=900) || elapsed>=10000){
+        hideLanguageLoader();
+      }else{
+        finishTimer=setTimeout(check,250);
+      }
+    };
+    finishTimer=setTimeout(check,250);
+  }
+
+  function setGoogleLanguage(code){
+    const target = code === 'zh' ? 'zh-CN' : code;
+    const combo = document.querySelector('.goog-te-combo');
+    if(!combo){pendingLanguage=target;return false;}
+    watchTranslation();
+    if(target === 'mg'){
+      combo.value='';
+    }else{
+      combo.value=target;
+    }
+    combo.dispatchEvent(new Event('change'));
+    pendingLanguage=null;
+    return true;
+  }
+
+  window.googleTranslateElementInit = function(){
+    if(!window.google || !google.translate || !google.translate.TranslateElement) return;
+    new google.translate.TranslateElement({
+      pageLanguage:'mg',
+      includedLanguages:supported.join(','),
+      autoDisplay:false,
+      multilanguagePage:true
+    },'google_translate_element');
+    translatorReady = true;
+    if(pendingLanguage) setGoogleLanguage(pendingLanguage);
+  };
+
+  window.gSetFullPageLanguage = function(code){
+    pendingLanguage=code;
+    showLanguageLoader();
+    if(translatorReady && setGoogleLanguage(code)) return;
+    // If the translation service does not respond, do not leave the loader stuck.
+    finishTimer=setTimeout(hideLanguageLoader,10000);
+  };
+
+  document.addEventListener('DOMContentLoaded',function(){
+    hideGoogleTranslateBar();
+    const barObserver=new MutationObserver(hideGoogleTranslateBar);
+    barObserver.observe(document.documentElement,{subtree:true,childList:true,attributes:true,attributeFilter:['class','style']});
+    setInterval(hideGoogleTranslateBar,1000);
+    const selector=document.getElementById('lang');
+    if(!selector) return;
+    selector.addEventListener('change',function(e){
+      window.gSetFullPageLanguage(e.target.value);
+    });
+  });
+
+  let tries=0;
+  const timer=setInterval(function(){
+    if(!pendingLanguage || tries++>40){clearInterval(timer);return;}
+    if(translatorReady && document.querySelector('.goog-te-combo')){
+      setGoogleLanguage(pendingLanguage);
+      clearInterval(timer);
+    }
+  },500);
+})();
+</script>
+<script async="" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+(function(){
+  function hideGoogleTranslateBanner(){
+    document.querySelectorAll('iframe.goog-te-banner-frame, .goog-te-banner-frame, body > .skiptranslate, #goog-gt-tt, .goog-te-balloon-frame').forEach(function(el){
+      el.style.setProperty('display','none','important');
+      el.style.setProperty('visibility','hidden','important');
+      el.style.setProperty('height','0','important');
+    });
+    if(document.body){
+      document.body.style.setProperty('top','0px','important');
+      document.body.style.setProperty('margin-top','0px','important');
+    }
+    if(document.documentElement){
+      document.documentElement.style.setProperty('top','0px','important');
+    }
+  }
+  hideGoogleTranslateBanner();
+  new MutationObserver(hideGoogleTranslateBanner).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:['style','class']});
+  window.addEventListener('load',hideGoogleTranslateBanner);
+  setInterval(hideGoogleTranslateBanner,700);
+})();
+</script>
+<script>
+(function(){
+  const countryCodes = ("AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW").split(" ");
+  const list = document.getElementById('globalCountryList');
+  const countryInput = document.getElementById('globalCountry');
+  if(list && countryInput && window.Intl && Intl.DisplayNames){
+    const names = new Intl.DisplayNames([document.documentElement.lang || 'en'],{type:'region'});
+    countryCodes.forEach(code=>{
+      try { const name=names.of(code); if(name && name!==code){const opt=document.createElement('option');opt.value=name;list.appendChild(opt);} } catch(e){}
+    });
+  }
+  const searchBtn=document.getElementById('globalSearchBtn');
+  const clearBtn=document.getElementById('globalClearBtn');
+  function runGlobalSearch(){
+    const country=(countryInput?.value||'').trim();
+    const kind=document.getElementById('globalOpportunityType')?.value||'jobs';
+    const words=(document.getElementById('globalKeywords')?.value||'').trim();
+    const terms={jobs:'jobs employment',internships:'internships traineeships',students:'student jobs graduate jobs',remote:'remote jobs work from home',volunteer:'volunteer opportunities NGO',research:'research university vacancies'};
+    const query=[terms[kind]||'jobs',words,country].filter(Boolean).join(' ');
+    const url='https://www.google.com/search?q='+encodeURIComponent(query);
+    window.open(url,'_blank','noopener,noreferrer');
+  }
+  searchBtn?.addEventListener('click',runGlobalSearch);
+  clearBtn?.addEventListener('click',function(){
+    if(countryInput) countryInput.value='';
+    const kind=document.getElementById('globalOpportunityType'); if(kind) kind.value='jobs';
+    const words=document.getElementById('globalKeywords'); if(words) words.value='';
+  });
+})();
+</script>
+<script>
+(function(){
+ const explorer=document.getElementById('explorer');
+ const views=[...document.querySelectorAll('[data-topic-view]')];
+ function showExplorer(){views.forEach(v=>v.classList.add('hidden'));explorer?.classList.remove('hidden');document.getElementById('homeTop')?.scrollIntoView({behavior:'smooth',block:'start'});}
+ function showTopic(key){const target=views.find(v=>v.dataset.topicView===key);if(!target)return;explorer?.classList.add('hidden');views.forEach(v=>v.classList.toggle('hidden',v!==target));target.scrollIntoView({behavior:'smooth',block:'start'});}
+ document.querySelectorAll('[data-open-topic]').forEach(b=>b.addEventListener('click',()=>showTopic(b.dataset.openTopic)));
+ document.querySelectorAll('.back-explorer').forEach(b=>b.addEventListener('click',showExplorer));
+ document.querySelectorAll('.topic-categories a').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href')?.slice(1);const el=id&&document.getElementById(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});el.setAttribute('tabindex','-1');el.focus({preventScroll:true});}}));
+ document.querySelectorAll('.compact-nav a[href="#explorer"],.compact-nav a[href="#homeTop"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();showExplorer();}));
+ document.querySelectorAll('.compact-nav a[href="#support"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();showTopic('support');}));
+})();
+</script>
+<script>
+// G Supabase Auth — publishable client key only; never place a service-role key in browser code.
+(()=>{
+ const PROJECT_URL='https://taxszdfvcikbggmcaatk.supabase.co';
+ const PUBLISHABLE_KEY='sb_publishable_A8qj1fxDgVKkl67D2VF2MQ_VUP6qbIP';
+ const status=document.getElementById('gAuthStatus');
+ const userLabel=document.getElementById('gAuthUser');
+ const signIn=document.getElementById('gAuthSignIn');
+ const signUp=document.getElementById('gAuthSignUp');
+ const signOut=document.getElementById('gAuthSignOut');
+ const form=document.getElementById('gAuthForm');
+ if(!window.supabase?.createClient){status.textContent='Tsy tafiditra ny Supabase SDK. Hamarino ny connexion Internet.';return;}
+ const client=window.supabase.createClient(PROJECT_URL,PUBLISHABLE_KEY);
+ const email=()=>document.getElementById('gAuthEmail').value.trim();
+ const password=()=>document.getElementById('gAuthPassword').value;
+ const busy=(value)=>{signIn.disabled=value;signUp.disabled=value;signOut.disabled=value;};
+ function showSession(session){
+  const user=session?.user;
+  userLabel.textContent=user?'Tafiditra: '+user.email:'Tsy mbola tafiditra.';
+  signIn.classList.toggle('hidden',!!user);signUp.classList.toggle('hidden',!!user);
+  signOut.classList.toggle('hidden',!user);
+  document.getElementById('gAuthPassword').autocomplete=user?'off':'current-password';
+ }
+ async function authAction(action){
+  if(!form.reportValidity())return;
+  busy(true);status.textContent='Andraso kely…';
+  try{
+   let result;
+   if(action==='signup') result=await client.auth.signUp({email:email(),password:password()});
+   else result=await client.auth.signInWithPassword({email:email(),password:password()});
+   if(result.error)throw result.error;
+   if(action==='signup'&&!result.data.session)status.textContent='Voaray ny fangatahana. Jereo ny mailakao hanamafisana ny kaonty.';
+   else status.textContent=action==='signup'?'Vita ny famoronana kaonty.':'Tafiditra soa aman-tsara.';
+   showSession(result.data.session);
+  }catch(error){status.textContent='Tsy nahomby: '+(error?.message||'Hadisoana tsy fantatra.');}
+  finally{busy(false);}
+ }
+ signIn.addEventListener('click',()=>authAction('signin'));
+ signUp.addEventListener('click',()=>authAction('signup'));
+ signOut.addEventListener('click',async()=>{busy(true);status.textContent='Mivoaka…';try{const {error}=await client.auth.signOut();if(error)throw error;status.textContent='Nivoaka soa aman-tsara.';showSession(null);}catch(error){status.textContent='Tsy nahomby: '+(error?.message||'Hadisoana tsy fantatra.');}finally{busy(false);}});
+ client.auth.getSession().then(({data,error})=>{if(error){status.textContent='Tsy voaray ny session: '+error.message;return;}showSession(data.session);status.textContent='Mifandray amin’ny Supabase.';}).catch(()=>{status.textContent='Tsy afaka naka ny session. Hamarino ny connexion.';});
+ client.auth.onAuthStateChange((_event,session)=>showSession(session));
+})();
 </script></body></html>
